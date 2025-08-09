@@ -1,0 +1,1281 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.2",
+  "pathMappings": {
+    "@oncoassist/localization": [
+      "libs/localization/src/index.ts"
+    ],
+    "@oncoassist/shared/constants": [
+      "libs/shared/constants/src/index.ts"
+    ],
+    "@oncoassist/shared/ui": [
+      "libs/shared/ui/src/index.ts"
+    ],
+    "@oncoassist/shared/api": [
+      "libs/shared/api/src/index.ts"
+    ],
+    "@oncoassist/store": [
+      "libs/store/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16262097014845541941"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "17085498363870782104"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5837262799529507717"
+      },
+      {
+        "file": "README.md",
+        "hash": "4930564442698541100"
+      },
+      {
+        "file": "eslint.config.cjs",
+        "hash": "7959035859369199654"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "7544409015863045561"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": "nx.json",
+        "hash": "15802921263710293810"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13408170078495321900"
+      },
+      {
+        "file": "package.json",
+        "hash": "8424842359417891465"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "14671560349914737117"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "16140283107432676792"
+      }
+    ],
+    "projectFileMap": {
+      "oncoassist-e2e": [
+        {
+          "file": "apps/oncoassist-e2e/eslint.config.cjs",
+          "hash": "10368159359735735058",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/oncoassist-e2e/playwright.config.ts",
+          "hash": "10962100114208663114",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist-e2e/project.json",
+          "hash": "10768859204552767337"
+        },
+        {
+          "file": "apps/oncoassist-e2e/src/example.spec.ts",
+          "hash": "1909365745453809229",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/oncoassist-e2e/tsconfig.json",
+          "hash": "3355828113018033400"
+        }
+      ],
+      "constants": [
+        {
+          "file": "libs/shared/constants/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/shared/constants/README.md",
+          "hash": "7940891343573782732"
+        },
+        {
+          "file": "libs/shared/constants/eslint.config.cjs",
+          "hash": "12334212943309227051",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/shared/constants/project.json",
+          "hash": "14938751883729511344"
+        },
+        {
+          "file": "libs/shared/constants/src/index.ts",
+          "hash": "3824184028969614622"
+        },
+        {
+          "file": "libs/shared/constants/src/lib/constants.tsx",
+          "hash": "8916146676193755142"
+        },
+        {
+          "file": "libs/shared/constants/src/lib/socialMediaLinks.ts",
+          "hash": "7067227089219700858",
+          "deps": [
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "libs/shared/constants/tsconfig.json",
+          "hash": "10942634319921743975"
+        },
+        {
+          "file": "libs/shared/constants/tsconfig.lib.json",
+          "hash": "4442013657138414713"
+        },
+        {
+          "file": "libs/shared/constants/tsconfig.spec.json",
+          "hash": "866090251918963737"
+        },
+        {
+          "file": "libs/shared/constants/vite.config.ts",
+          "hash": "3999143167175747452",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/shared/ui/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/shared/ui/README.md",
+          "hash": "12278270776781370320"
+        },
+        {
+          "file": "libs/shared/ui/eslint.config.cjs",
+          "hash": "12334212943309227051",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/project.json",
+          "hash": "10028833448099701595"
+        },
+        {
+          "file": "libs/shared/ui/src/index.ts",
+          "hash": "9138856426691992360"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/favicon.png",
+          "hash": "14526716325133410761"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/favorites.svg",
+          "hash": "11321174538062487220"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/hcp_validation.svg",
+          "hash": "3494133493699527124"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/home.svg",
+          "hash": "7609164155794255145"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_adj.png",
+          "hash": "16263947479734388572"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_ajcc.png",
+          "hash": "13034645344882296523"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_check_box.png",
+          "hash": "9601523352013689785"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_ctc.png",
+          "hash": "9412703605466913534"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_feed.png",
+          "hash": "7082714322202693930"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_formula.png",
+          "hash": "8171392031434586838"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_guide.png",
+          "hash": "4890823070011254304"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_menu.png",
+          "hash": "11547096861184571370"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_prod_con.png",
+          "hash": "1015397998589391746"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_score.png",
+          "hash": "257616558863254192"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_spc.png",
+          "hash": "2208352888198729294"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/ico_toxicity.png",
+          "hash": "12245581027818727401"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/logout.svg",
+          "hash": "728298079569590176"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/menu_home.png",
+          "hash": "17150555527992614806"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/oncopatient.svg",
+          "hash": "4279771670967246025"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/profile.svg",
+          "hash": "16946803092926251002"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/profile_settings.svg",
+          "hash": "208627226933258336"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/search.svg",
+          "hash": "6262412794049836147"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/icons/tools.svg",
+          "hash": "10403001381381325118"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/logo.png",
+          "hash": "5955338614491783704"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/assets/onco_white_icon.svg",
+          "hash": "16571114939841629685"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/components/SvgIcon/svgIcon.tsx",
+          "hash": "14615507866443370402",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/components/index.ts",
+          "hash": "16995300543098424430"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/footer/footer.module.scss",
+          "hash": "5810561080029087254"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/footer/footer.spec.tsx",
+          "hash": "5701646668888584513",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/footer/footer.tsx",
+          "hash": "1427181555698683473",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:react-i18next",
+            "oncoassist",
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/hooks/index.ts",
+          "hash": "1257270960321355098"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/hooks/useOpUserEmail.tsx",
+          "hash": "11641083164839369559",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/hooks/useOutsideClick.ts",
+          "hash": "10074369342233163559",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/loader/loader.module.scss",
+          "hash": "10291933172190825634"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/loader/loader.tsx",
+          "hash": "6358094287568058840",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui.module.scss",
+          "hash": "9824504850739023139"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui.spec.tsx",
+          "hash": "17904578029725158754",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui.tsx",
+          "hash": "13039817125183572543"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.json",
+          "hash": "10942634319921743975"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.lib.json",
+          "hash": "4442013657138414713"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.spec.json",
+          "hash": "866090251918963737"
+        },
+        {
+          "file": "libs/shared/ui/vite.config.ts",
+          "hash": "9061564955519890408",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "store": [
+        {
+          "file": "libs/store/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/store/README.md",
+          "hash": "11954187547841793447"
+        },
+        {
+          "file": "libs/store/eslint.config.cjs",
+          "hash": "12926241206093164459",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/store/project.json",
+          "hash": "6377883464936586674"
+        },
+        {
+          "file": "libs/store/src/index.ts",
+          "hash": "15927939294808823026"
+        },
+        {
+          "file": "libs/store/src/lib/features/settings/settingsSlice.ts",
+          "hash": "8057657944974383357",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/store.ts",
+          "hash": "9313421523231423912",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/tsconfig.json",
+          "hash": "2717301636124270161"
+        },
+        {
+          "file": "libs/store/tsconfig.lib.json",
+          "hash": "5982162789104615864"
+        },
+        {
+          "file": "libs/store/tsconfig.spec.json",
+          "hash": "5947821632368113453"
+        },
+        {
+          "file": "libs/store/vite.config.ts",
+          "hash": "586079759622787458",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "api": [
+        {
+          "file": "libs/shared/api/README.md",
+          "hash": "10387293777668578643"
+        },
+        {
+          "file": "libs/shared/api/eslint.config.cjs",
+          "hash": "8763399131769664710",
+          "deps": [
+            "npm:jsonc-eslint-parser"
+          ]
+        },
+        {
+          "file": "libs/shared/api/package.json",
+          "hash": "11326043012186561214"
+        },
+        {
+          "file": "libs/shared/api/project.json",
+          "hash": "3770784613762590885"
+        },
+        {
+          "file": "libs/shared/api/src/index.ts",
+          "hash": "16523008816114477815"
+        },
+        {
+          "file": "libs/shared/api/src/lib/api.ts",
+          "hash": "6905895447851431007",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared/api/tsconfig.json",
+          "hash": "7056483138291005420"
+        },
+        {
+          "file": "libs/shared/api/tsconfig.lib.json",
+          "hash": "4332255753143698601"
+        },
+        {
+          "file": "libs/shared/api/tsconfig.spec.json",
+          "hash": "866090251918963737"
+        },
+        {
+          "file": "libs/shared/api/vite.config.ts",
+          "hash": "2674558515156077565",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "localization": [
+        {
+          "file": "libs/localization/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/localization/README.md",
+          "hash": "8464698088451252880"
+        },
+        {
+          "file": "libs/localization/package.json",
+          "hash": "11847250503257015061"
+        },
+        {
+          "file": "libs/localization/project.json",
+          "hash": "6053683423562680230"
+        },
+        {
+          "file": "libs/localization/src/index.ts",
+          "hash": "15997174869898799091"
+        },
+        {
+          "file": "libs/localization/src/lib/i18n.ts",
+          "hash": "11489530467891494045",
+          "deps": [
+            "npm:i18next",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "libs/localization/src/lib/locales/en.json",
+          "hash": "2138596904458547728"
+        },
+        {
+          "file": "libs/localization/src/lib/locales/fr.json",
+          "hash": "6184652923696316746"
+        },
+        {
+          "file": "libs/localization/src/lib/locales/hi.json",
+          "hash": "11230465331214820934"
+        },
+        {
+          "file": "libs/localization/src/lib/locales/index.ts",
+          "hash": "11213333128167237485"
+        },
+        {
+          "file": "libs/localization/src/lib/locales/sp.json",
+          "hash": "1804135399012475247"
+        },
+        {
+          "file": "libs/localization/src/lib/localization.module.scss",
+          "hash": "18034141240661392636"
+        },
+        {
+          "file": "libs/localization/src/lib/localization.tsx",
+          "hash": "2977017847963929300",
+          "deps": [
+            "npm:react",
+            "npm:react-i18next",
+            "npm:framer-motion"
+          ]
+        },
+        {
+          "file": "libs/localization/tsconfig.json",
+          "hash": "3005867445121686474"
+        },
+        {
+          "file": "libs/localization/tsconfig.lib.json",
+          "hash": "1750390632875427341"
+        },
+        {
+          "file": "libs/localization/vite.config.ts",
+          "hash": "9592757074646117600",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "oncoassist": [
+        {
+          "file": "apps/oncoassist/eslint.config.cjs",
+          "hash": "12926241206093164459",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/index.html",
+          "hash": "14505256859360939825"
+        },
+        {
+          "file": "apps/oncoassist/jest.config.ts",
+          "hash": "12660704884027702919"
+        },
+        {
+          "file": "apps/oncoassist/project.json",
+          "hash": "9396627870750354589"
+        },
+        {
+          "file": "apps/oncoassist/public/ONCO_SEARCH_BANNER_background.jpg",
+          "hash": "8788754544111071732"
+        },
+        {
+          "file": "apps/oncoassist/public/assets/AppStore.png",
+          "hash": "4062709394581913114"
+        },
+        {
+          "file": "apps/oncoassist/public/assets/GooglePlay.png",
+          "hash": "1053823562718998735"
+        },
+        {
+          "file": "apps/oncoassist/public/assets/sponsored.png",
+          "hash": "15915987449776645156"
+        },
+        {
+          "file": "apps/oncoassist/public/favicon.ico",
+          "hash": "14526716325133410761"
+        },
+        {
+          "file": "apps/oncoassist/src/__variables.scss",
+          "hash": "12431473578538441919"
+        },
+        {
+          "file": "apps/oncoassist/src/api/bannerAdsApi.ts",
+          "hash": "16217469562283178316",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/api/index.ts",
+          "hash": "8556167049592458668"
+        },
+        {
+          "file": "apps/oncoassist/src/api/newsApi.ts",
+          "hash": "13414874860310963542",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/api/programmaticAdsApi.ts",
+          "hash": "6180891516587762374",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/api/sponsoredSearchApi.ts",
+          "hash": "16266991906672732702",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/api/upvoteApi.ts",
+          "hash": "11071396544581005013",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/app/app.module.scss",
+          "hash": "2621298474565478288"
+        },
+        {
+          "file": "apps/oncoassist/src/app/app.spec.tsx",
+          "hash": "14397471911330238209",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/app/app.tsx",
+          "hash": "2862417082184020983",
+          "deps": [
+            "npm:react-redux",
+            "npm:react-router-dom",
+            "ui",
+            "localization",
+            "npm:react-i18next",
+            "constants",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/oncoassist/src/assets/images/sponsored.png",
+          "hash": "15915987449776645156"
+        },
+        {
+          "file": "apps/oncoassist/src/components/AppStoreButton/appStoreButton.module.scss",
+          "hash": "12616226349649065687"
+        },
+        {
+          "file": "apps/oncoassist/src/components/AppStoreButton/appStorebutton.tsx",
+          "hash": "3943537434936913659",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/AuthRightMenu/authRightMenu.module.scss",
+          "hash": "2605306855592757222"
+        },
+        {
+          "file": "apps/oncoassist/src/components/AuthRightMenu/authRightMenu.tsx",
+          "hash": "18285785645761101210",
+          "deps": [
+            "npm:react",
+            "npm:react-redux",
+            "npm:react-i18next",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/BannerAd/bannerAd.module.scss",
+          "hash": "14950346254035250833"
+        },
+        {
+          "file": "apps/oncoassist/src/components/BannerAd/bannerAd.tsx",
+          "hash": "2673721009057715291",
+          "deps": [
+            "npm:react",
+            "npm:classnames"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/IframeLoader/iFrameLoader.module.scss",
+          "hash": "3309086414381982992"
+        },
+        {
+          "file": "apps/oncoassist/src/components/IframeLoader/iFrameLoader.tsx",
+          "hash": "17080036134424301189",
+          "deps": [
+            "npm:react",
+            "npm:react-redux",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/MobileRedirect/mobileRedirect.module.scss",
+          "hash": "13616192108592116546"
+        },
+        {
+          "file": "apps/oncoassist/src/components/MobileRedirect/mobileRedirect.tsx",
+          "hash": "15830192879348775115",
+          "deps": [
+            "npm:react",
+            "npm:bootstrap"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/NewsCard/newsCard.module.scss",
+          "hash": "11055397093111670385"
+        },
+        {
+          "file": "apps/oncoassist/src/components/NewsCard/newsCard.tsx",
+          "hash": "3447729116160665409",
+          "deps": [
+            "npm:react",
+            "npm:classnames",
+            "npm:react-icons",
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/ProgrammaticAd/programmaticAd.module.scss",
+          "hash": "10667596974395169686"
+        },
+        {
+          "file": "apps/oncoassist/src/components/ProgrammaticAd/programmaticAd.tsx",
+          "hash": "396805716062761977",
+          "deps": [
+            "npm:react",
+            "npm:classnames",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/SearchComponent/SearchComponent.module.scss",
+          "hash": "12111885349917598632"
+        },
+        {
+          "file": "apps/oncoassist/src/components/SearchComponent/SearchComponent.tsx",
+          "hash": "5113577866070245313",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants",
+            "npm:react-bootstrap",
+            "npm:react-icons",
+            "npm:react-redux",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/StorageListener/storageListener.tsx",
+          "hash": "13072084582024629560",
+          "deps": [
+            "npm:react",
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/components/UpvoteButton/UpvoteButton.module.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/oncoassist/src/components/UpvoteButton/UpvoteButton.tsx",
+          "hash": "3520141589939426008",
+          "deps": [
+            "npm:react",
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/config/firebaseConfig.ts",
+          "hash": "12627684698458940756",
+          "deps": [
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/constants/menuConstants.tsx",
+          "hash": "5945364057556798709",
+          "deps": [
+            "npm:react-icons",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/constants/reviewConstants.tsx",
+          "hash": "17406839494525626974"
+        },
+        {
+          "file": "apps/oncoassist/src/containers/Layout/layout.module.scss",
+          "hash": "13709887202666157690"
+        },
+        {
+          "file": "apps/oncoassist/src/containers/Layout/layout.tsx",
+          "hash": "3176656475913166274",
+          "deps": [
+            "npm:react",
+            "npm:react-redux",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/containers/LeftMenu/leftMenu.module.scss",
+          "hash": "12209514869628653116"
+        },
+        {
+          "file": "apps/oncoassist/src/containers/LeftMenu/leftMenu.tsx",
+          "hash": "17482029307625734310",
+          "deps": [
+            "npm:react-icons",
+            "npm:react-router-dom",
+            "constants",
+            "npm:react-redux",
+            "npm:react-i18next",
+            "npm:react",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/containers/RightMenu/rightMenu.module.scss",
+          "hash": "810499888850239098"
+        },
+        {
+          "file": "apps/oncoassist/src/containers/RightMenu/rightMenu.tsx",
+          "hash": "10480871304344553099",
+          "deps": [
+            "npm:react",
+            "npm:react-redux",
+            "npm:react-icons",
+            "npm:react-router-dom",
+            "npm:react-i18next",
+            "constants",
+            "api"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/containers/index.ts",
+          "hash": "3238871435789205791"
+        },
+        {
+          "file": "apps/oncoassist/src/hooks/useCombinedAds.ts",
+          "hash": "8314262636434999977",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/main.tsx",
+          "hash": "13091889707670112866",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/AbcTool/abcTool.tsx",
+          "hash": "3431950909536490487",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/AboutUs/aboutUs.tsx",
+          "hash": "15729952787411066092",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/AdjuvantTool/adjuvantTool.tsx",
+          "hash": "12473123678854930132",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/AjccTnmStaging/ajccTnmStaging.tsx",
+          "hash": "877904984339485453",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Dashboard/dashboard.module.scss",
+          "hash": "14735488762517670732"
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Dashboard/dashboard.tsx",
+          "hash": "9122372294804568978",
+          "deps": [
+            "npm:react",
+            "constants",
+            "npm:react-i18next",
+            "npm:react-redux",
+            "npm:classnames",
+            "npm:react-use-intercom",
+            "api",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Dashboard/reviewSection.tsx",
+          "hash": "7901226381501607627",
+          "deps": [
+            "npm:react",
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/DrugInfo/drugInfo.tsx",
+          "hash": "18033086821623572209",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/DrugInteractionChecker/drugInteractionChecker.tsx",
+          "hash": "12283927737121904764",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Favorites/favorites.tsx",
+          "hash": "7107905784986143747",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/FeedBack/feedBack.tsx",
+          "hash": "12290327745813440452",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Formula/FongScore/fongScore.scss",
+          "hash": "10697325289654085757"
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Formula/FongScore/fongScore.tsx",
+          "hash": "17763647418247654598",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Formula/formula.module.scss",
+          "hash": "10697325289654085757"
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Formula/formula.tsx",
+          "hash": "18181500967015831341",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/HcpValidation/hcpValidation.tsx",
+          "hash": "1071652496790541356",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/IoToxicityTool/ioToxicityTool.tsx",
+          "hash": "858237380500376833",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/NccnProtocol/nccnProtocol.tsx",
+          "hash": "10611439606940917709",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/OncoVideos/oncoVideos.tsx",
+          "hash": "9885324246281327642",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/ProductServices/productServices.tsx",
+          "hash": "15301528208434687977",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Profile/profile.tsx",
+          "hash": "9269725399951825242",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/PrognosticScore/prognosticScore.tsx",
+          "hash": "14875682480539347514",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Signin/signin.module.scss",
+          "hash": "13388348063717112482"
+        },
+        {
+          "file": "apps/oncoassist/src/pages/Signin/signin.tsx",
+          "hash": "11100626388822176638",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:react-redux",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/ToxicityGrading/toxicityGrading.tsx",
+          "hash": "6019953769981787619",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/pages/index.tsx",
+          "hash": "15527136328613757092"
+        },
+        {
+          "file": "apps/oncoassist/src/store/getValidatedUserSlice.ts",
+          "hash": "4199644796920196733",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/leftMenuReducer.ts",
+          "hash": "7377277329503859397",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/rightMenuReducer.ts",
+          "hash": "17125777457135105581",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/sponsoredSearchSlice.ts",
+          "hash": "10663916637622828018",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/store.ts",
+          "hash": "4012396158709663974",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "store"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/userEmailSlice.ts",
+          "hash": "14207117523615514245",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/store/voteSlice.ts",
+          "hash": "347141529173382638",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/styles.scss",
+          "hash": "13133912512912923334"
+        },
+        {
+          "file": "apps/oncoassist/src/utils/HomeToolsData.json",
+          "hash": "17216876903057533823"
+        },
+        {
+          "file": "apps/oncoassist/src/utils/SearchList.json",
+          "hash": "3057258672615780226"
+        },
+        {
+          "file": "apps/oncoassist/src/utils/dateFormat.ts",
+          "hash": "16527960812454836052"
+        },
+        {
+          "file": "apps/oncoassist/src/utils/decrypt.ts",
+          "hash": "1116712301488328898",
+          "deps": [
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/utils/firebaseUtils.ts",
+          "hash": "5892685864397813040",
+          "deps": [
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/utils/handleSearchLink.ts",
+          "hash": "8659304387621348158",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "constants"
+          ]
+        },
+        {
+          "file": "apps/oncoassist/src/utils/urlUtils.ts",
+          "hash": "5761801487739922880"
+        },
+        {
+          "file": "apps/oncoassist/tsconfig.app.json",
+          "hash": "5105204840857582364"
+        },
+        {
+          "file": "apps/oncoassist/tsconfig.json",
+          "hash": "7245696343842452685"
+        },
+        {
+          "file": "apps/oncoassist/tsconfig.spec.json",
+          "hash": "11082235439457521999"
+        },
+        {
+          "file": "apps/oncoassist/vite.config.ts",
+          "hash": "5292720866918555685",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}

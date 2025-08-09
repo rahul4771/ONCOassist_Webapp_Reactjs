@@ -1,0 +1,32 @@
+[
+    {
+      "urlSearchString": "abctool",
+      "id": 1,
+      "controller": "advanced_breast_cancer_tool",
+      "view": "advanced_breast_cancer_tool"
+    },
+    {
+      "urlSearchString": "dic",
+      "id": 2,
+      "controller": "drug_interaction_checker",
+      "view": "drug_interaction_checker"
+    },
+    {
+      "urlSearchString": "gist",
+      "id": 3,
+      "StoryboardId": "GISTHomeViewController",
+      "StoryboardName": "AdjuvantTools"
+    },
+    {
+      "urlSearchString": "lc",
+      "id": 4,
+      "StoryboardId": "LungCancerRed",
+      "StoryboardName": "Main_iPhone"
+    },
+    {
+      "urlSearchString": "melanoma",
+      "id": 5,
+      "StoryboardId": "MelanomaInputViewController",
+      "StoryboardName": "AdjuvantTools"
+    }
+  ]

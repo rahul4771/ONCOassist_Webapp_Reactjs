@@ -1,0 +1,410 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  // margin-left: 18%; /* Default margin when the menu is open */
+  transition: margin-left 0.3s ease; /* Smooth transition when the menu is toggled */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  }
+.mainContent::-webkit-scrollbar {
+  display: none; 
+  }
+
+
+.leftMenu.closed + .mainContent {
+  margin-left: 70px; /* Adjusted margin when the menu is closed */
+}
+.searchSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 15px;
+  padding: 20px;
+  background: url('/ONCO_SEARCH_BANNER_background.jpg') no-repeat center/cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+}
+
+.searchText {
+  font-size: clamp(16px, 2vw, 22px); /* Adjusts based on screen size */
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal; /* Allows wrapping */
+  max-width: 1300px;
+  margin-bottom: 0;
+  font-size:26px;
+  cursor: default;
+}
+
+.searchInput {
+  flex-grow: 1;
+  max-width: 100%; /* Allows full width on small screens */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 50px;
+  max-width: 500px;
+}
+
+.loaderWithMargin {
+  margin-bottom: 75px; // Ensure it's above the footer
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1224px) {
+  .searchInput {
+    margin-left: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .searchBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .searchText {
+    font-size: 18px; /* Ensures readability */
+  }
+
+  .searchInput {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.contentSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.newsSection{
+  width: 65%;
+  @media (max-width: 960px) {
+     width:auto;
+     align-items: center;
+  }
+
+}
+ .reviewSection {
+  width: 35%;
+  position: sticky;
+  top: 0px; /* Adjust for spacing */
+  max-height: 60vh;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+}
+
+
+.newsCard, .reviewCard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsCard h2, .reviewCard h3 {
+  margin-top: 0;
+}
+
+.newsCard p, .reviewCard p {
+  margin: 10px 0;
+}
+
+.newsCard a {
+  color: #007bff;
+  text-decoration: none;
+ 
+  &:hover {
+  text-decoration: underline;
+  }
+}
+
+.newsSection h1, .reviewSection h1 {
+  color:#1c93d1;
+  font-weight: 270;
+  font-size: 26px;
+  cursor: default;
+}
+
+.webPageLink {
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+
+.socialIcons {
+  display: flex;
+  justify-content: center; // Centers icons horizontally
+  gap: 30px; // Adds equal spacing between icons
+  margin-top: 20px;
+
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: 1100px) {
+    gap: 25px;
+  }
+}
+
+.icon{
+  color: #1c93d1;
+  
+  &:hover {
+  transform: scale(1.2);
+  }
+}
+
+.socialIcon {
+  font-size: 34px; // Adjust icon size
+ 
+  background-color: #57b4e6;// Customize color if needed
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.footer{
+justify-content: center;
+display: flex;
+cursor: default;
+}
+.reviewContent{
+justify-content:center;
+
+align-items: center;
+// font-family:Avenir;
+font-family:  "Roboto", sans-serif;
+
+
+
+transition: transform 1s ease-in-out;
+padding-right: 5px;
+padding: 10px;
+overflow: hidden;
+position: relative; /* Ensure the child elements are positioned relative to this container */
+height: 100%; 
+}
+
+.reviewerName{
+color: #57b4e6;
+justify-content: center;
+display: flex;
+
+font-size: 14px;
+// font-family:Avenir;
+font-family:  "Roboto", sans-serif;
+}
+
+.carouselControls{
+color: #57b4e6;
+justify-content: center;
+display: flex;
+
+font-size: 14px;
+}
+
+.carouselButton{
+color: #57b4e6;
+margin: 10px;
+}
+
+.footer{
+font-size: 12px;
+}
+
+.carouselDots {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.dot {
+width: 10px;
+height: 10px;
+margin: 0 5px;
+background-color:#94d6f9; // Light grey for inactive dots
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 1.0s ease;
+}
+
+.activeDot {
+background-color:  #3b82f6; 
+
+}
+
+
+.reviewCarousel {
+overflow: hidden;
+width: 100%;
+max-height: auto;
+max-width: 100%;
+margin: 0 auto;
+position: relative;
+
+background: white;
+box-shadow: none;
+border-radius: 10px;
+border: 1px solid #ddd;
+justify-content: center;
+margin-top: 40px;
+}
+
+.reviewTrack {
+display: flex;
+width: 100%;
+transition: transform 1s ease-in-out;
+
+background: white;
+word-wrap: break-word;
+overflow-wrap: break-word;
+margin: 10px;
+padding: 10px;
+}
+
+.reviewCard {
+min-width: 88%;
+max-width: 100%;
+background: white;
+box-shadow: none;
+text-align: center;
+margin: 15px;
+overflow: hidden; /* Prevent content from overflowing */
+word-wrap: break-word;
+transition: opacity 1s ease-in-out;
+height: 200px;
+}
+.reviewCard p{
+padding: 5px;
+
+min-width: 80%;
+}
+
+.reviewContent{
+padding:10px;
+}
+
+.fadeIn {
+opacity: 1;
+}
+
+.fadeOut {
+opacity: 0;
+}
+
+.loadMoreButton {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.loadMorediv {
+  width: 100%;
+  text-align: center;
+}
+
+.downArrowIcon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #1c93d1;
+}
+
+.loader {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  color: #1c93d1;
+  margin-bottom: 100px;
+}
+
+.customLoader {
+  width: 2rem;
+  height: 2rem;
+  border-width: 3px;
+  border-color: #1c93d1 !important; /* This will change the spinner color */
+  border-right-color: transparent !important; /* Creates a spinning effect */
+}
+
+
+// @media (max-width: 700px) {
+//   .contentSection {
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//   }
+
+//   .searchBox {
+//     width: 100%;
+//     flex-direction: column;
+//     text-align: center;
+//     padding: 10px;
+//   }
+
+//   .searchInput {
+//     width: 100%;
+//     max-width: 100%;
+//   }
+
+//   .newsSection, .reviewSection {
+//     width: 100%;
+//   }
+
+//   .reviewSection {
+//     display: none; /* Hides sidebar on small screens */
+//   }
+// }

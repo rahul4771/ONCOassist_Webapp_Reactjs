@@ -1,0 +1,48 @@
+{
+  "name": "oncoassist",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/oncoassist/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project oncoassist --web",
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+         "buildTarget": "oncoassist:build"
+      },
+      "configurations": {
+        "local": {
+          "envFile": ".env.local"
+        }, 
+        "develop": {
+          "envFile": ".env.develop"
+        },
+        "staging": {
+          "envFile": ".env.staging"
+        }
+      }
+    }
+  },
+  "build": {
+    "executor": "@nx/vite:build",
+    "options": {
+      "outputPath": "dist/apps/oncoassist"
+    },
+    "configurations": {
+      "local": {
+        "envFile": ".env.local"
+      }, 
+      "development": {
+        "envFile": ".env.development"
+      },
+      "staging": {
+        "envFile": ".env.staging"
+      },
+      "production": {
+        "envFile": ".env.production"
+      }
+    }
+  }
+}
+

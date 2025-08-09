@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx build oncoassist",
+    "startTime": "2025-08-05T13:49:20.351Z",
+    "endTime": "2025-08-05T13:49:44.971Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "api:build",
+      "target": "build",
+      "projectName": "api",
+      "hash": "16870161583116349629",
+      "startTime": "2025-08-05T13:49:20.530Z",
+      "endTime": "2025-08-05T13:49:29.245Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "localization:build",
+      "target": "build",
+      "projectName": "localization",
+      "hash": "9615190618457369593",
+      "startTime": "2025-08-05T13:49:20.530Z",
+      "endTime": "2025-08-05T13:49:33.485Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "oncoassist:build",
+      "target": "build",
+      "projectName": "oncoassist",
+      "hash": "5009444214133601434",
+      "startTime": "2025-08-05T13:49:33.495Z",
+      "endTime": "2025-08-05T13:49:44.962Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
