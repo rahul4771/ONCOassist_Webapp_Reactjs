@@ -1,0 +1,39 @@
+.container {
+  padding-right: 1rem;
+
+  .cardContainer {
+    width: auto;
+    position: relative;
+    overflow: visible;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      display: block !important;
+    }
+  }
+
+  .responsiveIframe {
+    width: 100%;
+    max-width: 728px; /* Keep within banner size */
+    border: none;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%; /* Full width on smaller screens */
+      
+    }
+  }
+}

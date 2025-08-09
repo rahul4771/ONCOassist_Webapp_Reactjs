@@ -1,0 +1,375 @@
+.container {
+  padding-right: 1rem;
+
+
+  .cardContainer {   
+    width: auto;
+    position: relative;
+    overflow: visible;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  
+
+  .newsIcon {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #1c93d1 !important;
+  }
+
+  .newsShareIcons {
+    align-items: center;
+    position: absolute;
+    top: 94%;
+    right: 0;
+    z-index: 100;
+    background: white;
+    border: 1px solid #ddd;
+    margin-left: 5px !important;
+    overflow: visible;
+    border-radius: 8px;
+    padding-top: 0.3em;
+    padding-bottom: 0.05em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+
+    @media screen and (max-width: 1300px) {
+      top: 96%;
+      right: 0;
+      
+    }
+    
+    @media screen and (max-width: 1024px) {
+      top: 96.5%;
+      right: 0;
+      
+    }
+
+    @media screen and (max-width: 768px) {
+      top: 97%;
+      right: 0;
+      
+    }
+
+    a {
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+      border: none;
+
+     
+    }
+  }
+
+  .newsShareButton {
+    margin: 0 1em;
+  }
+
+  .contentWrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .mainContent {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      display: block !important;
+    }
+  }
+
+  .imageSection {
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+
+  .newsThumbImage {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px !important;
+    
+    @media (max-width: 100px) {
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textWrapper {
+    width: 100%;
+  }
+
+  .newsTitle {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .textSection {
+    width: 100%;
+  }
+
+  .newsText {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .channelInfo{
+    margin: 0;
+    margin-left: 125px !important;
+    color: #999999;
+    font-size: 16px !important;
+
+     /* iPad Pro / Tablet view (768px-1024px): stacked layout */
+     @media (min-width: 768px) and (max-width: 1024px) {
+      margin-left: 0 !important;
+    }
+  }
+
+  .publishedInfo {
+    margin: 0;
+    color: #999999;
+    font-size: 16px !important;
+    width:100px;
+  }
+  
+  .channelInfo {
+    /* Regular positioning, will align with text content */
+    margin-left: 0;
+  }
+
+  .newsText, .publishedInfo, .channelInfo{
+    cursor: default;
+  }
+
+  
+  .footerContainer {
+    width: 100%;
+    display: flex;
+    
+    /* Default for desktop: single row layout */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    
+    /* iPad Pro / Tablet view (768px-1024px): stacked layout */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .dateRow {
+    display: flex;
+    align-items: center;
+    
+    /* Desktop view: align with text content */
+    margin-right: auto;
+    margin-left: 0;
+    
+    /* iPad Pro view: full width with bottom margin */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .channelButtonsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    
+    /* Align with the text above in desktop view */
+    margin-left: 0;
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  
+  .channelPlaceholder {
+    /* Only needed for spacing in desktop view */
+    visibility: hidden;
+    width: 80px;
+    
+    /* Hide placeholder in iPad view */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    color:#1c93d1 !important;
+    gap: 1px;
+  }
+
+  .likeButton {
+    font-size: 16px;
+    border: none;
+    // min-width: 60px;
+    color: #1c93d1 !important;
+
+    &:active, &:focus, &.active {
+      background-color: #f8f9fa !important; /* Same color as hover */
+      border-color: transparent !important; /* Make border transparent when active/focused */
+      box-shadow: none !important; /* Remove box shadow */
+      outline: none !important; /* Ensure no outline appears */
+    }
+    
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+
+
+  .shareButton {
+    font-size: 16px;
+    
+    padding-right: 0px;
+    padding-bottom: 4px;
+    background-color: white;
+    border: none; 
+    color: #1c93d1 !important;
+    
+    &:active, &:focus, &.active {
+      background-color: #f8f9fa !important; /* Same color as hover */
+      border-color: transparent !important; /* Make border transparent when active/focused */
+      box-shadow: none !important; /* Remove box shadow */
+      outline: none !important; /* Ensure no outline appears */
+    }
+    
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+  
+
+  .heartIcon{
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: bottom;
+
+    &:hover {
+      color: #1c93d1 !important;
+    }
+  }
+
+  .noUnderline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .socialShareIcons {
+    color: #1c93d1 !important;
+
+   
+  }
+  
+  .socialButton {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    
+    &:active, &:focus, &.active {
+      background-color: white !important;
+      border-color: #dee2e6;
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+
+
+.voteCount {
+  vertical-align: bottom;
+  display: inline-block;
+  line-height: 1;
+  color: #1c93d1 !important; 
+  margin-left: 2px; /* Adjust spacing as needed */
+}
+
+/* Add these styles to your newsCard.module.scss file */
+
+.shareContainer {
+  position: relative;
+  display: inline-block;
+
+  /* This ensures the hover state is maintained when moving to the social buttons */
+  &:hover .newsShareIcons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.newsShareIcons {
+  align-items: center;
+  position: absolute;
+  top: 94%;
+  right: 0;
+  z-index: 100;
+  background: white;
+  border: 1px solid #ddd;
+  margin-left: 5px !important;
+  overflow: visible;
+  border-radius: 8px;
+  padding: 0.3em;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(20%);
+  
+  /* This makes the social buttons stay visible when hovering over them */
+  &:hover {
+    display: flex !important;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    top: 96%;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    top: 96.5%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 97%;
+    right: 0;
+  }
+
+  a {
+    margin: 0 0.15em;
+    border: none;
+  }
+}
+
+}

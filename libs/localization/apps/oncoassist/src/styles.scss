@@ -1,0 +1,26 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.custom-primary {
+    background: #50C1E9 !important;
+    border-color: #50C1E9 !important;
+    color: white !important;
+    border-radius: 10px !important;
+  
+    &:hover {
+      background: #1c93d1 !important;
+      border-color: #1c93d1 !important;
+    }
+  }
+  
+  .custom-secondary {
+    background: #fff !important;  
+    color: #1c93d1 !important;
+    border-color: #ccc !important;
+    border-radius: 10px !important;
+  
+    &:hover {
+      background: #f2f4f6 !important;
+      border-color: #d7d8d8 !important;
+    }
+  }
+  

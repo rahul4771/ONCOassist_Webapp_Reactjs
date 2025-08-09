@@ -1,0 +1,410 @@
+
+.leftMenu {
+  width: 222px;
+  background: #ffffff; 
+  color: #2d3748; 
+  overflow: hidden;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+  overflow-x: hidden;
+  scrollbar-width: none;
+  margin-bottom: 100px;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  transition: width 0.5s ease;
+}
+
+.reducedHeight {
+  height: calc(100vh - 75px);
+}
+
+.fullHeight {
+  height: 100vh;
+}
+
+.navMenu {
+  flex: 1; 
+  position: relative;
+}
+
+
+.leftMenu.closed {
+  width: 70px;
+  background: #fff; 
+}
+
+
+.activeIcon {
+  color: #2b93d1; 
+}
+
+.activeText {
+  color: rgb(243, 151, 151) !important; 
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering logo */
+  padding: 10px;
+  background-color: #1c93d1;
+  max-height: 72px !important;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px; /* Ensuring a fixed height similar to footerLogo */
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.leftMenu.closed .logo {
+  opacity: 0;
+  width: 0;
+}
+
+/* Ensuring the logo is centered and fully fits when isOpen is true */
+.leftMenu.open .logo {
+  width: auto;
+  max-width: 180px;
+  height: 40px; /* Ensuring a uniform size */
+}
+
+
+.toggleButton {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #1c93d1;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+
+  &:hover {
+    background-color: #286090;
+  }
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.menuItem {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #2d3748;
+  transition: all 0.3s ease;
+  
+  &:hover {
+  background: #edf2f7;
+  color: #1c93d1;
+}
+}
+
+.menuLinkActive {
+  background-color: #cde5ff;
+}
+
+.icon {
+  margin-right: 15px;
+  font-size: 15px;
+  color: #1c93d1;
+}
+
+.iconImage {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  margin-right: 15px;
+  filter: drop-shadow(1px 1px 0 #1c93d1) drop-shadow(-1px -1px 0 #1c93d1);
+  transform: scale(1.1);
+}
+
+.leftMenuIconCollapse {
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.leftMenu.closed .icon {
+  margin-right: 0;
+  margin-left: 0px;
+}
+
+.label {
+  flex-grow: 1;
+  text-wrap: auto;
+}
+
+.chevron {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.openChevron {
+  transform: rotate(180deg);
+}
+
+
+.footerMenu {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // padding-bottom: 20px;
+  width: 100%;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 0px !important;
+  width: 100%;
+  min-width: 220px;
+}
+
+.footerList,
+.socialMediaList {
+  width: 100%; 
+  align-items: flex-start; 
+  min-width: 220px;
+}
+
+.footerItem {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  margin: 5px 0;
+  text-wrap: none;
+  width: 100%; 
+  
+  &:hover{
+  color: #1c93d1 !important;
+ }
+}
+
+.footerLink {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px !important;
+  padding: 1px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  
+  &:hover {
+  color: #1c93d1;
+  }
+}
+
+
+.socialMediaList {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding-left: 18px;
+  flex-wrap: wrap;
+  margin: 10px 0 15px;
+  gap: 5px;
+  width: 100%;
+}
+
+.socialMediaItem {
+  list-style-type: none;
+  margin-right: 15px;
+  
+  &:hover {
+  transform: scale(1.2);
+  }
+}
+
+.socialMediaLink {
+  color: #1c93d1;
+  font-size: 18px;
+}
+
+
+
+.profileDropdown {
+  position: absolute;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.popup {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profileMenuItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  height: 35px; 
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  border-radius: 6px;
+
+  &:hover {
+  transform: translateX(3px);
+  color: #1c93d1 !important;
+  background: #edf2f7;
+  }
+}
+
+.profileMenuIcon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #1c93d1;
+}
+
+.modal-header {
+  background-color: #1c93d1 !important;
+}
+
+.modal-content {
+  width: 180px !important; 
+  min-width: 180px; 
+}
+
+
+
+@media (max-width: 768px) {
+  .leftMenu {
+    width: 222px;
+  }
+
+  .leftMenu.closed {
+    width: 60px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logoSection{
+    padding: 10px 6px;
+  }
+
+  .menuLink{
+    padding: 15px 17px;
+  }
+
+  .socialMediaItem {
+    margin-right: 10px;
+  }
+
+  .socialMediaLink {
+    font-size: 16px;
+  }
+
+  .profileDropdown {
+    width: 180px;
+  }
+
+  .profileMenuItem {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .profileMenuIcon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftMenu {
+    width: 222px;
+  }
+
+  .leftMenu.closed {
+    width: 60px;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .logoSection{
+    padding: 10px 6px;
+  }
+
+  .menuLink{
+    padding: 15px 17px;
+  }
+
+
+  .socialMediaItem {
+    margin-right: 10px;
+  }
+
+  .socialMediaLink {
+    font-size: 16px;
+  }
+
+  .profileDropdown {
+    width: 160px;
+  }
+
+  .profileMenuItem {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .profileMenuIcon {
+    font-size: 14px;
+  }
+
+  .footerMenu {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+}
