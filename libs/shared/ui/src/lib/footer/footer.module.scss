@@ -1,0 +1,116 @@
+
+  .footer {
+    background-color: #2b93d1;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+
+
+  
+  .footerLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  .footerLogo {
+    height: 50px; 
+    margin-right: 10px;
+  }
+
+  .verticalLine {
+    border-left: 2px solid white; 
+    height: 50px; 
+    margin: 0 35px 0 9px; 
+  }
+
+  .joinText{
+    cursor: default;
+  }
+
+  
+.footerButton,
+.footerButtonCreate,
+.footerButtonSignIn {
+    border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px; 
+  font-size: 16px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.footerButtonCreate,
+.footerButtonSignIn {
+  flex: 1; 
+  min-width: 75px;
+  text-align: center;
+}
+
+.footerButtonCreate {
+  background-color: #50C1E9;
+  color: #FFFF;
+  margin-right: 10px;
+}
+
+.footerButtonSignIn {
+  background-color: #FFFF;
+  color: #000;
+}
+
+.footerButton:hover {
+  background-color: lightgray;
+}
+
+.footerButtonDiv {
+  margin-right: 20px;
+}
+
+.footerContent{
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .footerContent{
+    margin-right: 20px;
+  }
+  .footerButtonCreate {
+    margin-right: 5px;
+  }
+  .footerButtonSignIn {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+
+  .footerButton,
+  .footerButtonCreate,
+  .footerButtonSignIn {
+      font-size: 14px;
+      padding: 5px;
+  }
+
+  .footerButtonDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footerContent {
+      margin-bottom: 10px;
+  }
+}
