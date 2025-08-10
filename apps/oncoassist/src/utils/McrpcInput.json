@@ -1,0 +1,59 @@
+[
+  {
+    "id":"0",
+    "title": "MCRPC_PROSTATE_INPUT_PRIOR_DOCETAXEL",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "prior_docetaxel_treatment"    
+  },
+  {
+    "id": "1",
+    "title": "MCRPC_PROSTATE_INPUT_PRIOR_ARPI",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "prior_ARPi_use"
+  },
+  {
+    "id": "2",
+    "title": "MCRPC_PROSTATE_INPUT_BRCA_MUTATION",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "brca_mutation"
+  },
+  {
+    "id": "3",
+    "title": "MCRPC_PROSTATE_INPUT_NON_BRCA_MUTATION",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "non_brca_ddr_mutation"
+  },
+  {
+    "id": "4",
+    "title": "MCRPC_PROSTATE_INPUT_PSMA",
+    "isMandatory": false,
+    "selectedIndex": -1,
+    "analyticsKey": "psma_positive_tumor"
+  },
+  {
+    "id": "5",
+    "title": "MCRPC_PROSTATE_INPUT_MSI_MMR",
+    "isMandatory": false,
+    "selectedIndex": -1,
+    "analyticsKey": "msi_high"
+  },
+  {
+    "id": "6",
+    "title": "MCRPC_TMB_HIGH",
+    "isMandatory": false,
+    "selectedIndex": -1,
+    "analyticsKey": "tmb_high"
+  },
+  {
+    "id": "7",
+    "title": "MCRPC_BONE_METASTATIC",
+    "isMandatory": false,
+    "selectedIndex": -1,
+    "analyticsKey": "bone_only_metastatic_disease"
+  }
+]
+

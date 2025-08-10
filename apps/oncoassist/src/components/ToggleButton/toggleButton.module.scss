@@ -1,0 +1,23 @@
+// Add shared styles for the toggle button wrapper
+.toggleWrapper {
+    width: 200px;
+  
+  
+  }
+  
+  // Adjust button styling
+  .toggleButton {
+    font-size: 16px;
+    padding: 6px 12px;
+  
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 13px;
+      padding: 4px 8px;
+    }
+  }
+  

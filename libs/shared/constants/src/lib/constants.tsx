@@ -1,11 +1,10 @@
 export const PROD_MODE = process.env.APP_PROD_MODE || "local"; // Default to "local"
 
 export const config = {
-  webappURL: "http://webnew.oncoassist/",
-  backendAPIURL: "https://appstaging.oncoassist.com/api/",
+  webappURL: "https://webapp.oncoassist.com/",
+  backendAPIURL: "https://app.oncoassist.com/api/",
   newsApiEndpoint : 'news/general',
   newsVoteEndpoint : 'news/upvote',
-  sponsoredSearchEndpoint : 'sponsoredsearch',
   userDetailsEndpoint : 'public/index.php/dashboard/getUserDetail',
   userIDEncKey : '8f75321b9e8d1b3ecee8d8533aa9d110c0d80292d3322c885643de2deaf61fd1',
   newsPerPage : 10,

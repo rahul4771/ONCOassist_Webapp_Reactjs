@@ -13,13 +13,6 @@ import { FaArrowLeft } from "react-icons/fa";
 import searchListData from "../../utils/SearchList.json"; 
 import SearchComponent from "../../components/SearchComponent/SearchComponent"
 import { setRedirectIframeLink, setRedirectLink, setRedirectLoginClick } from "../../store/rightMenuReducer";
-import { SponsoredSearchState } from '../../store/sponsoredSearchSlice';
-import { config } from '@oncoassist/shared/constants';
-import { getApi } from '@oncoassist/shared/api';
-import { useGetSponsoredResultsQuery,useLazyGetSponsoredResultsQuery } from "../../api/sponsoredSearchApi";
-import { setSponsoredResults, setLoading, setError } from "../../store/sponsoredSearchSlice";
-
-
 
 const RightMenu: React.FC = () => {
 
@@ -33,86 +26,6 @@ const RightMenu: React.FC = () => {
   const selectedMenu = useSelector((state: { leftMenu: LeftMenuState }) => state.leftMenu.selectedMenu);
   const isAuthScreenOn = useSelector((state: { leftMenu: LeftMenuState }) => state.leftMenu.isAuthScreenOn);
   const isAuthenticated = useSelector((state: { userEmail: UserState }) => state.userEmail.opUserEmail);
-
-  interface UserDetails {
-      opuseremail: string;
-      userID: string;
-      username: string;
-      country: string;
-      Profession: string;
-      first_name: string;
-      second_name: string;
-      Is_Accept_GDPR_App: boolean;
-      created_at: number;
-      primarySpecialityName: string;
-      cancer_specialist_types_select_names: string[];
-      hcpvalidationVal:string;
-      HCP_Registration_Id: string;
-      country_object_id: string;
-      userJobdescription: string;
-      userSpecialityIds : string[];
-  }
-  
-  const [userData, setUserData] = useState<UserDetails | null>(null);
-  const [isSessionAuthenticated, setIsSessionAuthenticated] = useState(false);
-
-  useEffect(() => {
-      const getUserDetails = async () => {
-        const data = await getApi<UserDetails>(
-          config.webappURL + config.userDetailsEndpoint
-        );
-  
-  
-        if (data && data.opuseremail && data.userID) {
-          setUserData(data);
-          setIsSessionAuthenticated(true);
-        }
-        else {
-          setUserData(null);
-          setIsSessionAuthenticated(false);
-        }
-      };
-  
-      if (isAuthenticated) {
-        getUserDetails();
-      }
-  }, [isAuthenticated]);
-
-  const [triggerSponsoredQuery, { data: sponsoredSearchData, error: sponsoredSearchError, isLoading: sponsoredSearchLoading }] =  useLazyGetSponsoredResultsQuery();
-    useEffect(() => {
-      if (userData?.country_object_id && userData?.Profession && userData?.userJobdescription) {
-        const rawSpecialities =  Array.isArray(userData.userSpecialityIds)
-            ? userData.userSpecialityIds
-            : (userData.userSpecialityIds as string).split(',');
-              
-        triggerSponsoredQuery({
-          country_object_id: userData.country_object_id,
-          profession: userData.Profession,
-          specialities: rawSpecialities,
-          jobdescription: userData.userJobdescription,
-          hcpStatus: userData.hcpvalidationVal,
-          hcp_id: userData.HCP_Registration_Id,
-          user_id: userData.userID
-        })
-        .unwrap()
-        .then((res) => {
-          //console.log('Sponsored API success:', res);
-        })
-        .catch((err) => {
-          console.error('Sponsored API error:', err);
-        });
-      }
-    }, [userData]);
-
-    useEffect(() => {  
-        if (sponsoredSearchError) {
-            console.log('setSponsored not fetched----');
-            dispatch(setError("Failed to load sponsored results"));
-        } else if (sponsoredSearchData) {
-            console.log('setSponsoredResults dispatched----');
-            dispatch(setSponsoredResults(sponsoredSearchData)); 
-        }
-    }, [sponsoredSearchData, sponsoredSearchError, sponsoredSearchLoading, dispatch]);
   
 
   const prevSelectedMenu = useRef<string | null>(null);
@@ -211,13 +124,19 @@ const RightMenu: React.FC = () => {
   };
 
 
-  const handleClick = (link: string, iFrameLink: string, id: string) => {
-    if(id)
-      id = "/"+id
+  const handleClick = (link: string, iFrameLink: string) => {
+    dispatch(setRedirectLink(null));
+      dispatch(setRedirectIframeLink(null));
+      dispatch(setRedirectLoginClick(false));
 
+      dispatch(setAuthScreenOn(false));
+      dispatch(selectMenu(null));
+      dispatch(toggleLeftMenu(true));
+      setSelectedSubMenu(null);
+      navigate(iFrameLink, { state: { iframeSrc: link } });
     if (!isAuthenticated) {
       dispatch(setRedirectLink(link));
-      dispatch(setRedirectIframeLink(iFrameLink+id));
+      dispatch(setRedirectIframeLink(iFrameLink));
       dispatch(setAuthScreenOn(true));
     } else {
       dispatch(setRedirectLink(null));
@@ -228,7 +147,7 @@ const RightMenu: React.FC = () => {
       dispatch(selectMenu(null));
       dispatch(toggleLeftMenu(true));
       setSelectedSubMenu(null);
-      navigate(iFrameLink+id, { state: { iframeSrc: link }});
+      navigate(iFrameLink, { state: { iframeSrc: link } });
     }
   };
   
@@ -263,7 +182,7 @@ const RightMenu: React.FC = () => {
                 href={subSubItem.link}
                 onClick={(e) => {
                   e.preventDefault();
-                  handleClick(subSubItem.link, subSubItem.iFrameLink ?? "", subSubItem.id ?? "");
+                  handleClick(subSubItem.link, subSubItem.iFrameLink ?? "");
                 }}
                 className={styles.menuLink}
               >
@@ -289,7 +208,7 @@ const RightMenu: React.FC = () => {
                     if (subItem.subSubItems) {
                       setSelectedSubMenu(subItem.name);
                     } else {
-                      handleClick(subItem.link, subItem.iFrameLink ?? "", "");
+                      handleClick(subItem.link, subItem.iFrameLink ?? "");
                     }
                   }}
                   className={styles.menuLink}
