@@ -1,5 +1,5 @@
 {
-  "name": "oncoassist-e2e",
+  "name": "localization-oncoassist-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/oncoassist-e2e/src",
