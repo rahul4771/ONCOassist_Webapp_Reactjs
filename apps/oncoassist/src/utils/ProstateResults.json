@@ -1,0 +1,3017 @@
+[
+  {
+    "overallHR": {
+      "lowerCI": 0.57,
+      "upperCI": 0.97,
+      "title": "Overall",
+      "hazardRatio": 0.74
+    },
+    "id": 14,
+    "title": "MAGNITUDE",
+    "combinations": [
+      0,
+      1
+    ],
+    "description": "FDA and EMA approved Niraparib and abiraterone acetate plus prednisone for BRCA-mutated metastatic castration-resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "The data displayed are for the BRCA 1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Niraparib + Abiraterone acetate with prednisone",
+            "psaResponseRate": "82.3",
+            "timeToPSAProgression": "18.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Abiraterone acetate with prednisone",
+            "psaResponseRate": "69",
+            "timeToPSAProgression": "9.2 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "MAGNITUDE_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "MAGNITUDE_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.61,
+        "upperCI": 1.66,
+        "title": "Age <65 years",
+        "hazardRatio": 1.01
+      },
+      {
+        "lowerCI": 0.38,
+        "upperCI": 0.89,
+        "title": "Age ≥65-74 years",
+        "hazardRatio": 0.58
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 1.24,
+        "title": "Age ≥75 years",
+        "hazardRatio": 0.76
+      },
+      {
+        "lowerCI": 0.22,
+        "upperCI": 1.05,
+        "title": "Asian race",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.61,
+        "upperCI": 1.13,
+        "title": "White race",
+        "hazardRatio": 0.83
+      },
+      {
+        "lowerCI": 0.20,
+        "upperCI": 1.14,
+        "title": "Other race",
+        "hazardRatio": 0.47
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 0.92,
+        "title": "Baseline ECOG = 0",
+        "hazardRatio": 0.65
+      },
+      {
+        "lowerCI": 0.55,
+        "upperCI": 1.28,
+        "title": "Baseline ECOG = 1",
+        "hazardRatio": 0.84
+      },
+      {
+        "lowerCI": 0.45,
+        "upperCI": 1.14,
+        "title": "Bone-only metastasis at entry : Yes",
+        "hazardRatio": 0.72,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 1.02,
+        "title": "Bone-only metastasis at entry : No",
+        "hazardRatio": 0.73,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.48,
+        "upperCI": 1.66,
+        "title": "Past taxane-based chemotherapy : Yes",
+        "hazardRatio": 0.89,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 0.96,
+        "title": "Past taxane-based chemotherapy : No",
+        "hazardRatio": 0.71,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.03,
+        "upperCI": 1.23,
+        "title": "Past AR-targeted therapy : Yes",
+        "hazardRatio": 0.19,
+        "displayConditions": [
+          {
+            "item": 1,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.58,
+        "upperCI": 1.00,
+        "title": "Past AR-targeted therapy : No",
+        "hazardRatio": 0.76,
+        "displayConditions": [
+          {
+            "item": 1,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.38,
+        "upperCI": 0.81,
+        "title": "Gene mutation type : BRCA",
+        "hazardRatio": 0.55,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.68,
+        "upperCI": 1.45,
+        "title": "Gene mutation type : Other HRR",
+        "hazardRatio": 0.99,
+        "displayConditions": [
+          {
+            "item": 3,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Chi, K.N. et al. (2023) “Niraparib plus abiraterone acetate with prednisone in patients with metastatic castration-resistant prostate cancer and homologous recombination repair gene alterations: second interim analysis of the randomized phase III MAGNITUDE trial,” Annals of Oncology, available: https://doi.org/10.1016/j.annonc.2023.06.009 \n\nChi, K.N. et al. (2023) “Niraparib and Abiraterone Acetate for Metastatic Castration-Resistant Prostate Cancer,” Journal of Clinical Oncology, available: https://doi.org/10.1200/jco.22.01649"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 23,
+    "title": "TRITON2",
+    "combinations": [
+      3
+    ],
+    "description": "The overall trial population consist of BRCA1/2 and non-BRCA DDR mutated patients.\nFDA and EMA approved Rucaparib for BRCA-mutated metastatic castration-resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Rucaparib (For BRCA2)",
+            "psaResponseRate": "53",
+            "timeToPSAProgression": "7.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Rucaparib (For BRCA1)",
+            "psaResponseRate": "46",
+            "timeToPSAProgression": "4.2 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TRITON2_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TRITON2_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [
+    ],
+    "note": "",
+    "references": "Abida, W. et al. (2023) “Rucaparib for the Treatment of Metastatic Castration-resistant Prostate Cancer Associated with a DNA Damage Repair Gene Alteration: Final Results from the Phase 2 TRITON2 Study,” European Urology, available: https://doi.org/10.1016/j.eururo.2023.05.021 \n\nAbida, W. et al. (2020) “Rucaparib in Men With Metastatic Castration-Resistant Prostate Cancer Harboring aBRCA1orBRCA2Gene Alteration,” Journal of Clinical Oncology, available: https://doi.org/10.1200/jco.20.01035"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.36,
+      "upperCI": 0.69,
+      "title": "Overall",
+      "hazardRatio": 0.50
+    },
+    "id": 20,
+    "title": "TRITON3",
+    "combinations": [
+      2,
+      3
+    ],
+    "description": "The overall trial population consist of BRCA1/2 and non-BRCA DDR mutated patients.\nFDA and EMA approved Rucaparib for BRCA-mutated metastatic castration-resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 3,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Rucaparib",
+            "psaResponseRate": "55",
+            "timeToPSAProgression": "6.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Control",
+            "psaResponseRate": "27",
+            "timeToPSAProgression": "3.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TRITON3_rpfs_4",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TRITON3_os_4",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 0,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Rucaparib",
+            "psaResponseRate": "55",
+            "timeToPSAProgression": "6.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Control",
+            "psaResponseRate": "27",
+            "timeToPSAProgression": "3.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TRITON3_rpfs_4",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TRITON3_os_4",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 1,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Rucaparib",
+            "psaResponseRate": "55",
+            "timeToPSAProgression": "6.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Control",
+            "psaResponseRate": "27",
+            "timeToPSAProgression": "3.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TRITON3_rpfs_4",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TRITON3_os_4",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.33,
+        "upperCI": 1.08,
+        "title": "Age <65 yr",
+        "hazardRatio": 0.60
+      },
+      {
+        "lowerCI": 0.28,
+        "upperCI": 0.75,
+        "title": "Age 65-74 yr",
+        "hazardRatio": 0.46
+      },
+      {
+        "lowerCI": 0.22,
+        "upperCI": 0.74,
+        "title": "Age ≥75 yr",
+        "hazardRatio": 0.41
+      },
+      {
+        "lowerCI": 0.33,
+        "upperCI": 0.67,
+        "title": "Race: White",
+        "hazardRatio": 0.47
+      },
+      {
+        "lowerCI": 0.10,
+        "upperCI": 1.40,
+        "title": "Race: Other",
+        "hazardRatio": 0.36
+      },
+      {
+        "lowerCI": 0.22,
+        "upperCI": 1.05,
+        "title": "Race: Unknown",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.30,
+        "upperCI": 0.76,
+        "title": "ECOG performance-status score = 0",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.31,
+        "upperCI": 0.74,
+        "title": "ECOG performance-status score = 1",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.23,
+        "upperCI": 1.25,
+        "title": "Hepatic metastases: Yes",
+        "hazardRatio": 0.54,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.63,
+        "title": "Hepatic metastases: No",
+        "hazardRatio": 0.45,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.47,
+        "upperCI": 2.00,
+        "title": "Gene: BRCA1",
+        "hazardRatio": 0.97,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.63,
+        "title": "Gene: BRCA2",
+        "hazardRatio": 0.45,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Fizazi, K. et al. (2023) “Rucaparib or Physician’s Choice in Metastatic Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa2214676"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.54,
+      "upperCI": 0.81,
+      "title": "Overall",
+      "hazardRatio": 0.66
+    },
+    "id": 0,
+    "title": "PROpel",
+    "combinations": [
+      0,
+      1
+    ],
+    "description": "FDA approved Olaparib and Abiraterone plus Prednisolone for BRCA 1/2 mutated metastatic castrate resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "The data displayed are for the BRCA 1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Olaparib + Abiraterone",
+            "psaResponseRate": "79",
+            "timeToPSAProgression": "40.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Abiraterone + Placebo",
+            "psaResponseRate": "69",
+            "timeToPSAProgression": "5.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROpel_rpfs_1",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROpel_os_1",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.35,
+        "upperCI": 0.75,
+        "title": "Age <65 years",
+        "hazardRatio": 0.51
+      },
+      {
+        "lowerCI": 0.62,
+        "upperCI": 0.98,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.78
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 0.85,
+        "title": "White race",
+        "hazardRatio": 0.67
+      },
+      {
+        "lowerCI": 0.24,
+        "upperCI": 3.06,
+        "title": "Black/African American race",
+        "hazardRatio": 0.85
+      },
+      {
+        "lowerCI": 0.37,
+        "upperCI": 1.04,
+        "title": "Asian race",
+        "hazardRatio": 0.62
+      },
+      {
+        "lowerCI": 0.52,
+        "upperCI": 0.85,
+        "title": "Baseline ECOG = 0",
+        "hazardRatio": 0.67
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 1.06,
+        "title": "Baseline ECOG = 1",
+        "hazardRatio": 0.75
+      },
+      {
+        "lowerCI": 0.54,
+        "upperCI": 0.98,
+        "title": "Metastasis: Bone only",
+        "hazardRatio": 0.73,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.39,
+        "upperCI": 0.99,
+        "title": "Metastasis: Visceral",
+        "hazardRatio": 0.62,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.40,
+        "upperCI": 0.92,
+        "title": "Docetaxel treatment at mHSPC stage",
+        "hazardRatio": 0.61,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.89,
+        "title": "No docetaxel treatment at mHSPC stage",
+        "hazardRatio": 0.71,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Saad, F. et al. (2023) “Olaparib plus abiraterone versus placebo plus abiraterone in metastatic castration-resistant prostate cancer (PROpel): final prespecified overall survival results of a randomised, double-blind, phase 3 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(23)00382-0 \n\nClarke, N.W. et al. (2022) “Abiraterone and Olaparib for Metastatic Castration-Resistant Prostate Cancer,” NEJM Evidence, available: https://doi.org/10.1056/evidoa2200043"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.33,
+      "upperCI": 0.61,
+      "title": "Overall",
+      "hazardRatio": 0.45
+    },
+    "id": 2,
+    "title": "TALAPRO-2",
+    "combinations": [
+      0,
+      1
+    ],
+    "description": "The overall trial population consist of BRCA1/2 and non-BRCA DDR mutated patients.\nFDA and EMA approved Talazoparib plus Enzalutamide for HRR mutated metastatic castration-resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "The data displayed for overall population.",
+        "dataPSA": [
+          {
+            "title": "Talazoparib + Enzalutamide",
+            "psaResponseRate": "86",
+            "timeToPSAProgression": "28.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Enzalutamide",
+            "psaResponseRate": "63",
+            "timeToPSAProgression": "11.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TALAPRO_2_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TALAPRO_2_os_3",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 1,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Talazoparib + Enzalutamide",
+            "psaResponseRate": "86",
+            "timeToPSAProgression": "28.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Enzalutamide",
+            "psaResponseRate": "63",
+            "timeToPSAProgression": "11.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TALAPRO_2_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TALAPRO_2_os_1",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 2,
+        "subTitle": "The data displayed only for non-BRCA DDR mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Talazoparib + Enzalutamide",
+            "psaResponseRate": "86",
+            "timeToPSAProgression": "28.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Enzalutamide",
+            "psaResponseRate": "63",
+            "timeToPSAProgression": "11.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TALAPRO_2_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TALAPRO_2_os_2",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 3,
+        "subTitle": "The data displayed for overall population.",
+        "dataPSA": [
+          {
+            "title": "Talazoparib + Enzalutamide",
+            "psaResponseRate": "86",
+            "timeToPSAProgression": "28.6 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Enzalutamide",
+            "psaResponseRate": "63",
+            "timeToPSAProgression": "11.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TALAPRO_2_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TALAPRO_2_os_3",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.38,
+        "upperCI": 0.86,
+        "title": "Age <70 years",
+        "hazardRatio": 0.57
+      },
+      {
+        "lowerCI": 0.21,
+        "upperCI": 0.55,
+        "title": "Age ≥70 years",
+        "hazardRatio": 0.34
+      },
+      {
+        "lowerCI": 0.34,
+        "upperCI": 0.74,
+        "title": "ECOG PS = 0",
+        "hazardRatio": 0.50
+      },
+      {
+        "lowerCI": 0.23,
+        "upperCI": 0.68,
+        "title": "ECOG PS = 1",
+        "hazardRatio": 0.39
+      },
+      {
+        "lowerCI": 0.19,
+        "upperCI": 0.60,
+        "title": "Site of metastasis : Bone only",
+        "hazardRatio": 0.34,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.20,
+        "upperCI": 1.10,
+        "title": "Site of metastasis : Soft tissue only",
+        "hazardRatio": 0.47,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.77,
+        "title": "Site of metastasis : Bone and soft tissue",
+        "hazardRatio": 0.50,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.26,
+        "upperCI": 0.70,
+        "title": "Prior abiraterone or docetaxel : Yes",
+        "hazardRatio": 0.43,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.31,
+        "upperCI": 0.69,
+        "title": "Prior abiraterone or docetaxel : No",
+        "hazardRatio": 0.46,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.11,
+        "upperCI": 0.36,
+        "title": "BRCA1/2 alterations : Yes",
+        "hazardRatio": 0.20,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 1.02,
+        "title": "BRCA1/2 alterations : No",
+        "hazardRatio": 0.68,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.60,
+        "title": "All HRR deficient",
+        "hazardRatio": 0.44,
+        "displayConditions": [
+          {
+            "item": 3,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Agarwal, N. et al. (2025) “Final overall survival (OS) with talazoparib (TALA) + enzalutamide (ENZA) as first-line treatment in unselected patients with metastatic castration-resistant prostate cancer (mCRPC) in the phase 3 TALAPRO-2 trial.” ASCO 2025 Genitourinary Cancers Symposium. Presentation number: LBA18.\n\nFizazi, K. et al. (2023) “First-line talazoparib with enzalutamide in HRR-deficient metastatic castration-resistant prostate cancer: the phase 3 TALAPRO-2 trial,” Nature Medicine, available: https://doi.org/10.1038/s41591-023-02704-x \n\nAgarwal, N. et al. (2023) “TALAPRO-2: Phase 3 study of talazoparib (TALA) + enzalutamide (ENZA) versus placebo (PBO) + ENZA as first-line (1L) treatment in patients (pts) with metastatic castration-resistant prostate cancer (mCRPC).,” Journal of Clinical Oncology, available: https://doi.org/10.1200/jco.2023.41.6_suppl.lba17 \n\nde Bono, J.S. et al. (2021) “Talazoparib monotherapy in metastatic castration-resistant prostate cancer with DNA repair alterations (TALAPRO-1): an open-label, phase 2 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(21)00376-4"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.38,
+      "upperCI": 0.63,
+      "title": "Overall",
+      "hazardRatio": 0.49
+    },
+    "id": 3,
+    "title": "PROfound",
+    "combinations": [
+      2,
+      3
+    ],
+    "description": "The overall trial population consist of BRCA1/2 and non-BRCA DDR mutated patients.\nFDA and EMA approved Olaparib for HRR mutated metastatic castration-resistant prostate cancer.",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 3,
+        "subTitle": "The data displayed for overall population.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "30",
+            "timeToPSAProgression": "5.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "10",
+            "timeToPSAProgression": "3.5 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_0",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_0",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 0,
+        "subTitle": "The data displayed for overall population.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "30",
+            "timeToPSAProgression": "5.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "10",
+            "timeToPSAProgression": "3.5 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_0",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_0",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 1,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "43",
+            "timeToPSAProgression": "7.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "8",
+            "timeToPSAProgression": "3.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_1",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_1",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 4,
+        "subTitle": "The data displayed only for BRCA1/2 mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "43",
+            "timeToPSAProgression": "7.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "8",
+            "timeToPSAProgression": "3.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_1",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_1",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 2,
+        "subTitle": "The data displayed only for non-BRCA DDR mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "30",
+            "timeToPSAProgression": "4.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "10",
+            "timeToPSAProgression": "3.3 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_2",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_2",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 5,
+        "subTitle": "The data displayed only for non-BRCA DDR mutated cohort.",
+        "dataPSA": [
+          {
+            "title": "Olaparib",
+            "psaResponseRate": "30",
+            "timeToPSAProgression": "4.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide or Abiraterone",
+            "psaResponseRate": "10",
+            "timeToPSAProgression": "3.3 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROfound_rpfs_2",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROfound_os_2",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.34,
+        "upperCI": 0.85,
+        "title": "Age at randomization <65 yr",
+        "hazardRatio": 0.53
+      },
+      {
+        "lowerCI": 0.39,
+        "upperCI": 0.70,
+        "title": "Age at randomization ≥65 yr",
+        "hazardRatio": 0.52
+      },
+      {
+        "lowerCI": 0.44,
+        "upperCI": 1.04,
+        "title": "Region: Asia",
+        "hazardRatio": 0.67
+      },
+      {
+        "lowerCI": 0.33,
+        "upperCI": 0.71,
+        "title": "Region: Europe",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.26,
+        "upperCI": 0.73,
+        "title": "Region: North and South America",
+        "hazardRatio": 0.43
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 1.00,
+        "title": "ECOG score at baseline: 0",
+        "hazardRatio": 0.67
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.64,
+        "title": "ECOG score at baseline: 1",
+        "hazardRatio": 0.45
+      },
+      {
+        "lowerCI": 0.10,
+        "upperCI": 1.13,
+        "title": "ECOG score at baseline: 2",
+        "hazardRatio": 0.31
+      },
+      {
+        "lowerCI": 0.35,
+        "upperCI": 0.94,
+        "title": "Metastases at baseline: Bone only",
+        "hazardRatio": 0.57,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.28,
+        "upperCI": 0.64,
+        "title": "Metastases at baseline: Visceral",
+        "hazardRatio": 0.42,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.37,
+        "upperCI": 0.90,
+        "title": "Metastases at baseline: Other",
+        "hazardRatio": 0.57,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.29,
+        "upperCI": 0.53,
+        "title": "Previous taxane use: Yes",
+        "hazardRatio": 0.39,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 1.22,
+        "title": "Previous taxane use: No",
+        "hazardRatio": 0.77,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.13,
+        "upperCI": 1.39,
+        "title": "Gene alteration: BRCA1",
+        "hazardRatio": 0.41,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.13,
+        "upperCI": 0.32,
+        "title": "Gene alteration: BRCA2",
+        "hazardRatio": 0.21,
+        "displayConditions": [
+          {
+            "item": 2,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.61,
+        "upperCI": 1.87,
+        "title": "Gene alteration: ATM",
+        "hazardRatio": 1.04,
+        "displayConditions": [
+          {
+            "item": 3,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.44,
+        "upperCI": 1.31,
+        "title": "Gene alteration: CDK12",
+        "hazardRatio": 0.74,
+        "displayConditions": [
+          {
+            "item": 3,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.23,
+        "upperCI": 4.13,
+        "title": "Gene alteration: CHEK2",
+        "hazardRatio": 0.87,
+        "displayConditions": [
+          {
+            "item": 3,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "de Bono, J. et al. (2020) “Olaparib for Metastatic Castration-Resistant Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1911440 \n\nHussain, M. et al. (2020) “Survival with Olaparib in Metastatic Castration-Resistant Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa2022485"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 5,
+    "title": "INSPIRE",
+    "combinations": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "The data displayed for the overall study population, that include BRCAm, CDK12i, dMMR, hTMB",
+        "dataPSA": [
+          {
+            "title": "Cohort A",
+            "psaResponseRate": "47",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "INSPIRE_rpfs_0",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "INSPIRE_os_0",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 7,
+        "subTitle": "The data displayed for MSI high cohort.",
+        "dataPSA": [
+          {
+            "title": "Cohort A",
+            "psaResponseRate": "86",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "INSPIRE_rpfs_7",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "INSPIRE_os_7",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "condition": 8,
+        "subTitle": "The data displayed for hTMB cohort.",
+        "dataPSA": [
+          {
+            "title": "Cohort A",
+            "psaResponseRate": "38",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "INSPIRE_rpfs_8",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "INSPIRE_os_8",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "van Wilpe, S. et al. (2024) “Ipilimumab with nivolumab in molecularly selected patients with castration-resistant prostate cancer: primary analysis of the phase II INSPIRE trial,” Annals of Oncology, available: https://doi.org/10.1016/j.annonc.2024.09.004"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.45,
+      "upperCI": 0.62,
+      "title": "Overall",
+      "hazardRatio": 0.53
+    },
+    "id": 6,
+    "title": "COUGAR-302",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Abiraterone + Prednisone",
+            "psaResponseRate": "62",
+            "timeToPSAProgression": "11.1 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Prednisone",
+            "psaResponseRate": "24",
+            "timeToPSAProgression": "5.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "COU_AA_302_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "COU_AA_302_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.35,
+        "upperCI": 0.66,
+        "title": "Age <65 years",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 0.67,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.55
+      },
+      {
+        "lowerCI": 0.48,
+        "upperCI": 0.84,
+        "title": "Age ≥75 years",
+        "hazardRatio": 0.64
+      },
+      {
+        "lowerCI": 0.47,
+        "upperCI": 0.67,
+        "title": "Baseline ECOG = 0",
+        "hazardRatio": 0.56
+      },
+      {
+        "lowerCI": 0.30,
+        "upperCI": 0.61,
+        "title": "Baseline ECOG = 1",
+        "hazardRatio": 0.43
+      },
+      {
+        "lowerCI": 0.42,
+        "upperCI": 0.71,
+        "title": "Bone metastases only at entry - Yes",
+        "hazardRatio": 0.55,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.41,
+        "upperCI": 0.62,
+        "title": "Bone metastases only at entry - No",
+        "hazardRatio": 0.51,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Ryan, C.J. et al. (2015) “Abiraterone acetate plus prednisone versus placebo plus prednisone in chemotherapy-naive men with metastatic castration-resistant prostate cancer (COU-AA-302): final overall survival analysis of a randomised, double-blind, placebo-controlled phase 3 study,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(14)71205-7 \n\nRyan, C.J. et al. (2013) “Abiraterone in Metastatic Prostate Cancer without Previous Chemotherapy,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1209096"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.15,
+      "upperCI": 0.23,
+      "title": "Overall",
+      "hazardRatio": 0.19
+    },
+    "id": 7,
+    "title": "PREVAIL",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Enzalutamide",
+            "psaResponseRate": "78",
+            "timeToPSAProgression": "11.2 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo",
+            "psaResponseRate": "3",
+            "timeToPSAProgression": "2.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PREVAIL_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PREVAIL_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.15,
+        "upperCI": 0.26,
+        "title": "Age <75 years",
+        "hazardRatio": 0.20
+      },
+      {
+        "lowerCI": 0.12,
+        "upperCI": 0.24,
+        "title": "Age ≥75 years",
+        "hazardRatio": 0.17
+      },
+      {
+        "lowerCI": 0.12,
+        "upperCI": 0.25,
+        "title": "Region - North America",
+        "hazardRatio": 0.17
+      },
+      {
+        "lowerCI": 0.15,
+        "upperCI": 0.28,
+        "title": "Region - Europe",
+        "hazardRatio": 0.21
+      },
+      {
+        "lowerCI": 0.08,
+        "upperCI": 0.25,
+        "title": "Region - Other",
+        "hazardRatio": 0.14
+      },
+      {
+        "lowerCI": 0.11,
+        "upperCI": 0.20,
+        "title": "Baseline ECOG = 0",
+        "hazardRatio": 0.15
+      },
+      {
+        "lowerCI": 0.19,
+        "upperCI": 0.37,
+        "title": "Baseline ECOG = 1",
+        "hazardRatio": 0.27
+      },
+      {
+        "lowerCI": 0.16,
+        "upperCI": 0.49,
+        "title": "Visceral disease (lung and/or liver) at screening - Yes",
+        "hazardRatio": 0.28,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.14,
+        "upperCI": 0.22,
+        "title": "Visceral disease (lung and/or liver) at screening - No",
+        "hazardRatio": 0.17,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Beer, T.M. et al. (2017) “Enzalutamide in Men with Chemotherapy-naïve Metastatic Castration-resistant Prostate Cancer: Extended Analysis of the Phase 3 PREVAIL Study,” European Urology, available: https://doi.org/10.1016/j.eururo.2016.07.032 \n\nBeer, T.M. et al. (2014) “Enzalutamide in Metastatic Prostate Cancer before Chemotherapy,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1405095"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.34,
+      "upperCI": 0.57,
+      "title": "Overall",
+      "hazardRatio": 0.44
+    },
+    "id": 8,
+    "title": "TERRAIN",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Enzalutamide",
+            "psaResponseRate": "82",
+            "timeToPSAProgression": "19.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Bicalutamide",
+            "psaResponseRate": "21",
+            "timeToPSAProgression": "5.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TERRAIN_rpfs",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.19,
+        "upperCI": 0.57,
+        "title": "Age <65 years",
+        "hazardRatio": 0.33
+      },
+      {
+        "lowerCI": 0.30,
+        "upperCI": 0.66,
+        "title": "Age 65-75 years",
+        "hazardRatio": 0.44
+      },
+      {
+        "lowerCI": 0.35,
+        "upperCI": 0.87,
+        "title": "Age >75 years",
+        "hazardRatio": 0.55
+      },
+      {
+        "lowerCI": 0.30,
+        "upperCI": 0.67,
+        "title": "Region - North America",
+        "hazardRatio": 0.45
+      },
+      {
+        "lowerCI": 0.31,
+        "upperCI": 0.61,
+        "title": "Region - Europe",
+        "hazardRatio": 0.44
+      },
+      {
+        "lowerCI": 0.32,
+        "upperCI": 0.59,
+        "title": "Baseline ECOG = 0",
+        "hazardRatio": 0.43
+      },
+      {
+        "lowerCI": 0.25,
+        "upperCI": 0.71,
+        "title": "Baseline ECOG = 1",
+        "hazardRatio": 0.42
+      },
+      {
+        "lowerCI": 0.36,
+        "upperCI": 0.78,
+        "title": "Baseline disease locations - Bone only",
+        "hazardRatio": 0.53,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.16,
+        "upperCI": 0.63,
+        "title": "Baseline disease locations - Soft tissue only",
+        "hazardRatio": 0.32,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.25,
+        "upperCI": 0.59,
+        "title": "Baseline disease locations - Bone and soft tissue",
+        "hazardRatio": 0.38,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Shore, N.D. et al. (2016) “Efficacy and safety of enzalutamide versus bicalutamide for patients with metastatic prostate cancer (TERRAIN): a randomised, double-blind, phase 2 study,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(15)00518-5"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.55,
+      "upperCI": 0.88,
+      "title": "Overall",
+      "hazardRatio": 0.70
+    },
+    "id": 9,
+    "title": "PEACE III",
+    "combinations": [
+      0,
+      1
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Radium-223 + Enzalutamide",
+            "psaResponseRate": "Not Reported",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Enzalutamide",
+            "psaResponseRate": "Not Reported",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PEACE_III_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PEACE_III_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.47,
+        "upperCI": 0.82,
+        "title": "Age <75 years",
+        "hazardRatio": 0.62
+      },
+      {
+        "lowerCI": 0.59,
+        "upperCI": 1.35,
+        "title": "Age ≥75 years",
+        "hazardRatio": 0.89
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 0.87,
+        "title": "WHO Performance status: 0",
+        "hazardRatio": 0.66
+      },
+      {
+        "lowerCI": 0.51,
+        "upperCI": 1.18,
+        "title": "WHO Performance status: 1",
+        "hazardRatio": 0.78
+      },
+      {
+        "lowerCI": 0.48,
+        "upperCI": 0.84,
+        "title": "Prior docetaxel administration: No",
+        "hazardRatio": 0.64,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.57,
+        "upperCI": 1.31,
+        "title": "Prior docetaxel administration: Yes",
+        "hazardRatio": 0.86,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Gillessen, S. et al. (2024) “LBA1 A randomized multicenter open label phase III trial comparing enzalutamide vs a combination of Radium-223 (Ra223) and enzalutamide in asymptomatic or mildly symptomatic patients with bone metastatic castration-resistant prostate cancer (mCRPC): First results of EORTC-GUCG 1333/PEACE-3,” Annals of Oncology, available: https://doi.org/10.1016/j.annonc.2024.08.2307"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 10,
+    "title": "TAX 327",
+    "combinations": [
+      0,
+      2
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Docetaxel + Prednisone",
+            "psaResponseRate": "45",
+            "timeToPSAProgression": "7.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Mitoxantrone + Prednisone",
+            "psaResponseRate": "32",
+            "timeToPSAProgression": "7.8 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TAX_327_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Berthold, D.R. et al. (2008) “Docetaxel Plus Prednisone or Mitoxantrone Plus Prednisone for Advanced Prostate Cancer: Updated Survival in the TAX 327 Study,” Journal of Clinical Oncology, available: https://doi.org/10.1200/jco.2007.12.4008 \n\nTannock, I.F. et al. (2004) “Docetaxel plus Prednisone or Mitoxantrone plus Prednisone for Advanced Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa040720"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "",
+      "hazardRatio": 0
+    },
+    "id": 11,
+    "title": "SWOG 9916",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Docetaxel + Estramustine",
+            "psaResponseRate": "50",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Mitoxantrone + Prednisone",
+            "psaResponseRate": "27",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "SWOG_9916_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "SWOG_9916_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Petrylak, D.P. et al. (2004) “Docetaxel and Estramustine Compared with Mitoxantrone and Prednisone for Advanced Refractory Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa041318"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 12,
+    "title": "IMPACT",
+    "combinations": [
+      0,
+      1,
+      2
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Sipuleucel-T",
+            "psaResponseRate": "2.6",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": "3.7 months"
+          },
+          {
+            "title": "Placebo",
+            "psaResponseRate": "1.3",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": "3.6 months"
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "IMPACT_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR OS",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Kantoff, P.W. et al. (2010) “Sipuleucel-T Immunotherapy for Castration-Resistant Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1001294"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.58,
+      "upperCI": 0.83,
+      "title": "Overall",
+      "hazardRatio": 0.70
+    },
+    "id": 15,
+    "title": "ALSYMPCA",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "≥30% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Radium-223",
+            "psaResponseRate": "16",
+            "timeToPSAProgression": "2.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo",
+            "psaResponseRate": "6",
+            "timeToPSAProgression": "2.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "ALSYMPCA_os_0",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.82,
+        "title": "Baseline ECOG performance-status score: 0 or 1",
+        "hazardRatio": 0.68
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 1.35,
+        "title": "Baseline ECOG performance-status score: ≥2",
+        "hazardRatio": 0.82
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.89,
+        "title": "Previous docetaxel use: Yes",
+        "hazardRatio": 0.71,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.99,
+        "title": "Previous docetaxel use: No",
+        "hazardRatio": 0.74,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Hoskin, P. et al. (2014) “Efficacy and safety of radium-223 dichloride in patients with castration-resistant prostate cancer and symptomatic bone metastases, with or without previous docetaxel use: a prespecified subgroup analysis from the randomised, double-blind, phase 3 ALSYMPCA trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(14)70474-7 \n\nParker, C. et al. (2013) “Alpha Emitter Radium-223 and Survival in Metastatic Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1213755"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.58,
+      "upperCI": 0.83,
+      "title": "Overall",
+      "hazardRatio": 0.70
+    },
+    "id": 15,
+    "title": "ALSYMPCA",
+    "combinations": [
+      1,
+      2,
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥30% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Radium-223",
+            "psaResponseRate": "16",
+            "timeToPSAProgression": "2.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo",
+            "psaResponseRate": "6",
+            "timeToPSAProgression": "2.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "ALSYMPCA_os_1_2_3",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.82,
+        "title": "Baseline ECOG performance-status score: 0 or 1",
+        "hazardRatio": 0.68
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 1.35,
+        "title": "Baseline ECOG performance-status score: ≥2",
+        "hazardRatio": 0.82
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.89,
+        "title": "Previous docetaxel use: Yes",
+        "hazardRatio": 0.71,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 0.99,
+        "title": "Previous docetaxel use: No",
+        "hazardRatio": 0.74,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Hoskin, P. et al. (2014) “Efficacy and safety of radium-223 dichloride in patients with castration-resistant prostate cancer and symptomatic bone metastases, with or without previous docetaxel use: a prespecified subgroup analysis from the randomised, double-blind, phase 3 ALSYMPCA trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(14)70474-7 \n\nParker, C. et al. (2013) “Alpha Emitter Radium-223 and Survival in Metastatic Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1213755"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.56,
+      "upperCI": 0.79,
+      "title": "Overall",
+      "hazardRatio": 0.66
+    },
+    "id": 16,
+    "title": "COUGAR-301",
+    "combinations": [
+      1
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Abiraterone + Prednisone",
+            "psaResponseRate": "29",
+            "timeToPSAProgression": "10.2 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo + Prednisone",
+            "psaResponseRate": "6",
+            "timeToPSAProgression": "6.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "COU_AA_301_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "COU_AA_301_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR OS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.48,
+        "upperCI": 0.91,
+        "title": "Age <65 years",
+        "hazardRatio": 0.66
+      },
+      {
+        "lowerCI": 0.55,
+        "upperCI": 0.82,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.67
+      },
+      {
+        "lowerCI": 0.38,
+        "upperCI": 0.71,
+        "title": "Age ≥75 years",
+        "hazardRatio": 0.52
+      },
+      {
+        "lowerCI": 0.51,
+        "upperCI": 0.80,
+        "title": "Geographic region: North America",
+        "hazardRatio": 0.64
+      },
+      {
+        "lowerCI": 0.54,
+        "upperCI": 0.90,
+        "title": "Geographic region: Other",
+        "hazardRatio": 0.69
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 0.78,
+        "title": "Baseline ECOG performance status score: 0 or 1",
+        "hazardRatio": 0.64
+      },
+      {
+        "lowerCI": 0.53,
+        "upperCI": 1.24,
+        "title": "Baseline ECOG performance status score: 2",
+        "hazardRatio": 0.81
+      },
+      {
+        "lowerCI": 0.52,
+        "upperCI": 0.94,
+        "title": "Visceral disease at entry: Yes",
+        "hazardRatio": 0.70,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 0.76,
+        "title": "Visceral disease at entry: No",
+        "hazardRatio": 0.62,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Fizazi, K., et al. (2012) “Abiraterone acetate for treatment of metastatic castration-resistant prostate cancer: final overall survival analysis of the COU-AA-301 randomised, double-blind, placebo-controlled phase 3 study,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(12)70379-0 \n\nde Bono, J.S. et al. (2011) “Abiraterone and Increased Survival in Metastatic Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1014618"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.53,
+      "upperCI": 0.75,
+      "title": "Overall",
+      "hazardRatio": 0.63
+    },
+    "id": 17,
+    "title": "AFFIRM",
+    "combinations": [
+      1
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Enzalutamide",
+            "psaResponseRate": "54",
+            "timeToPSAProgression": "8.3 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Placebo",
+            "psaResponseRate": "2",
+            "timeToPSAProgression": "3.0 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "AFFIRM_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "AFFIRM_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR OS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.46,
+        "upperCI": 0.87,
+        "title": "Age <65 years",
+        "hazardRatio": 0.63
+      },
+      {
+        "lowerCI": 0.51,
+        "upperCI": 0.78,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.63
+      },
+      {
+        "lowerCI": 0.47,
+        "upperCI": 0.83,
+        "title": "Geographic region: North America",
+        "hazardRatio": 0.63
+      },
+      {
+        "lowerCI": 0.51,
+        "upperCI": 0.80,
+        "title": "Geographic region: Other",
+        "hazardRatio": 0.64
+      },
+      {
+        "lowerCI": 0.52,
+        "upperCI": 0.75,
+        "title": "Baseline ECOG performance status score: 0-1",
+        "hazardRatio": 0.62
+      },
+      {
+        "lowerCI": 0.39,
+        "upperCI": 1.07,
+        "title": "Baseline ECOG performance status score: 2",
+        "hazardRatio": 0.65
+      },
+      {
+        "lowerCI": 0.46,
+        "upperCI": 0.69,
+        "title": "Visceral (liver or lung) disease at baseline: No",
+        "hazardRatio": 0.56,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.56,
+        "upperCI": 1.09,
+        "title": "Visceral (liver or lung) disease at baseline: Yes",
+        "hazardRatio": 0.78,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Scher, H.I. et al. (2012) “Increased Survival with Enzalutamide in Prostate Cancer after Chemotherapy,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1207506"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.59,
+      "upperCI": 0.83,
+      "title": "Overall",
+      "hazardRatio": 0.70
+    },
+    "id": 18,
+    "title": "TROPIC",
+    "combinations": [
+      1
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Cabazitaxel (25 mg/m²)",
+            "psaResponseRate": "39.2",
+            "timeToPSAProgression": "6.4 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Mitoxantrone",
+            "psaResponseRate": "17.8",
+            "timeToPSAProgression": "3.1 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TROPIC_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TROPIC_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR OS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.61,
+        "upperCI": 1.08,
+        "title": "Age <65 years",
+        "hazardRatio": 0.81
+      },
+      {
+        "lowerCI": 0.50,
+        "upperCI": 0.78,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.62
+      },
+      {
+        "lowerCI": 0.57,
+        "upperCI": 0.82,
+        "title": "ECOG status: 0, 1",
+        "hazardRatio": 0.68
+      },
+      {
+        "lowerCI": 0.48,
+        "upperCI": 1.38,
+        "title": "ECOG status: 2",
+        "hazardRatio": 0.81
+      },
+      {
+        "lowerCI": 0.47,
+        "upperCI": 0.90,
+        "title": "Progression during docetaxel treatment",
+        "hazardRatio": 0.65,
+        "displayConditions": [
+          {
+            "item": 0,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "de Bono, J.S. et al. (2010) “Prednisone plus cabazitaxel or mitoxantrone for metastatic castration-resistant prostate cancer progressing after docetaxel treatment: a randomised open-label trial,” The Lancet, available: https://doi.org/10.1016/s0140-6736(10)61389-x"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 19,
+    "title": "NCT01505868",
+    "combinations": [
+      1,
+      2,
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "Only for aggressive variant prostate cancer",
+        "dataPSA": [
+          {
+            "title": "Cabazitaxel",
+            "psaResponseRate": "40.9",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Cabazitaxel + Carboplatin",
+            "psaResponseRate": "61.7",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "NCT01505868_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "NCT01505868_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Corn, P.G. et al. (2019) “Cabazitaxel plus carboplatin for the treatment of men with metastatic castration-resistant prostate cancers: a randomised, open-label, phase 1–2 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(19)30408-5"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.40,
+      "upperCI": 0.73,
+      "title": "Overall",
+      "hazardRatio": 0.54
+    },
+    "id": 21,
+    "title": "CARD",
+    "combinations": [
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Cabazitaxel",
+            "psaResponseRate": "35.7",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "ARPi",
+            "psaResponseRate": "13.5",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "CARD_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "CARD_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.31,
+        "upperCI": 0.73,
+        "title": "Age <70 yr",
+        "hazardRatio": 0.48
+      },
+      {
+        "lowerCI": 0.39,
+        "upperCI": 0.89,
+        "title": "Age ≥70 yr",
+        "hazardRatio": 0.59
+      },
+      {
+        "lowerCI": 0.41,
+        "upperCI": 0.75,
+        "title": "ECOG performance-status score: 0 or 1",
+        "hazardRatio": 0.56
+      },
+      {
+        "lowerCI": 0.10,
+        "upperCI": 1.12,
+        "title": "ECOG performance-status score: 2",
+        "hazardRatio": 0.33
+      },
+      {
+        "lowerCI": 0.41,
+        "upperCI": 1.52,
+        "title": "Visceral metastases: Yes",
+        "hazardRatio": 0.79,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.36,
+        "upperCI": 0.69,
+        "title": "Visceral metastases: No",
+        "hazardRatio": 0.50,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "de Wit, R. et al. (2019) “Cabazitaxel versus Abiraterone or Enzalutamide in Metastatic Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa1911206"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.92,
+      "upperCI": 1.19,
+      "title": "Overall",
+      "hazardRatio": 1.05
+    },
+    "id": 22,
+    "title": "PROSELICA",
+    "combinations": [
+      1,
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Cabazitaxel (20 mg/m²)",
+            "psaResponseRate": "29.50",
+            "timeToPSAProgression": "6.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Cabazitaxel (25 mg/m²)",
+            "psaResponseRate": "43",
+            "timeToPSAProgression": "5.7 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROSELICA_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROSELICA_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR OS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.89,
+        "upperCI": 1.39,
+        "title": "Age <65 years",
+        "hazardRatio": 1.11
+      },
+      {
+        "lowerCI": 0.81,
+        "upperCI": 1.13,
+        "title": "Age 65-75 years",
+        "hazardRatio": 0.95
+      },
+      {
+        "lowerCI": 0.93,
+        "upperCI": 1.70,
+        "title": "Age >75 years",
+        "hazardRatio": 1.25
+      },
+      {
+        "lowerCI": 0.92,
+        "upperCI": 1.20,
+        "title": "Baseline ECOG PS: 0-1",
+        "hazardRatio": 1.05
+      },
+      {
+        "lowerCI": 0.54,
+        "upperCI": 1.13,
+        "title": "Baseline ECOG PS: ≥2",
+        "hazardRatio": 0.78
+      },
+      {
+        "lowerCI": 0.87,
+        "upperCI": 1.17,
+        "title": "Visceral disease at baseline: no",
+        "hazardRatio": 1.01,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.90,
+        "upperCI": 1.42,
+        "title": "Visceral disease at baseline: yes",
+        "hazardRatio": 1.13,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Eisenberger, M. et al. (2017) “Phase III Study Comparing a Reduced Dose of Cabazitaxel (20 mg/m2) and the Currently Approved Dose (25 mg/m2) in Postdocetaxel Patients With Metastatic Castration-Resistant Prostate Cancer—PROSELICA,” Journal of Clinical Oncology, available: https://doi.org/10.1200/jco.2016.72.1076"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0.31,
+      "upperCI": 0.52,
+      "title": "Overall",
+      "hazardRatio": 0.40
+    },
+    "id": 24,
+    "title": "VISION",
+    "combinations": [
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Lutetium-177–PSMA-617",
+            "psaResponseRate": "46",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Standard of care",
+            "psaResponseRate": "7",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "VISION_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "VISION_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "SUBGROUP ANALYSIS FOR rPFS",
+    "hazardRatios": [
+      {
+        "lowerCI": 0.23,
+        "upperCI": 0.76,
+        "title": "Age <65 years",
+        "hazardRatio": 0.42
+      },
+      {
+        "lowerCI": 0.30,
+        "upperCI": 0.53,
+        "title": "Age ≥65 years",
+        "hazardRatio": 0.40
+      },
+      {
+        "lowerCI": 0.29,
+        "upperCI": 0.50,
+        "title": "Race: White",
+        "hazardRatio": 0.38
+      },
+      {
+        "lowerCI": 0.23,
+        "upperCI": 2.20,
+        "title": "Race: African American or Black",
+        "hazardRatio": 0.72
+      },
+      {
+        "lowerCI": 0.36,
+        "upperCI": 6.19,
+        "title": "Race: Asian",
+        "hazardRatio": 1.50
+      },
+      {
+        "lowerCI": 0.33,
+        "upperCI": 0.56,
+        "title": "ECOG score is 0 or 1",
+        "hazardRatio": 0.43
+      },
+      {
+        "lowerCI": 0.08,
+        "upperCI": 0.38,
+        "title": "ECOG score is 2",
+        "hazardRatio": 0.18
+      },
+      {
+        "lowerCI": 0.15,
+        "upperCI": 0.53,
+        "title": "Liver metastases: Yes",
+        "hazardRatio": 0.28,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 0
+          }
+        ]
+      },
+      {
+        "lowerCI": 0.33,
+        "upperCI": 0.57,
+        "title": "Liver metastases: No",
+        "hazardRatio": 0.43,
+        "displayConditions": [
+          {
+            "item": 7,
+            "selection": 1
+          }
+        ]
+      }
+    ],
+    "note": "",
+    "references": "Sartor, O. et al. (2021) “Lutetium-177–PSMA-617 for Metastatic Castration-Resistant Prostate Cancer,” New England Journal of Medicine, available: https://doi.org/10.1056/nejmoa2107322"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 25,
+    "title": "PROSTY",
+    "combinations": [
+      0
+    ],
+    "description": "",
+    "infoPSA": "",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "2-weekly Docetaxel",
+            "psaResponseRate": "49",
+            "timeToPSAProgression": "15.8 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "3-weekly Docetaxel",
+            "psaResponseRate": "42",
+            "timeToPSAProgression": "14.6 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PROSTY_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PROSTY_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Kellokumpu-Lehtinen, P.-L. et al. (2013) “2-weekly versus 3-weekly docetaxel to treat castration-resistant advanced prostate cancer: a randomised, phase 3 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(12)70537-5"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 26,
+    "title": "PSMAfore",
+    "combinations": [
+      2
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "177Lu-PSMA-617 group",
+            "psaResponseRate": "51",
+            "timeToPSAProgression": "10.64 months",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "ARPi switch group",
+            "psaResponseRate": "17",
+            "timeToPSAProgression": "4.24 months",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "PSMAfore_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "PSMAfore_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Morris, M.J. et al. (2024) “177Lu-PSMA-617 versus a change of androgen receptor pathway inhibitor therapy for taxane-naive patients with progressive metastatic castration-resistant prostate cancer (PSMAfore): a phase 3, randomised, controlled trial,” The Lancet, available: https://doi.org/10.1016/s0140-6736(24)01653-2"
+  },
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 27,
+    "title": "TheraP",
+    "combinations": [
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Lu-PSMA-617",
+            "psaResponseRate": "66",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Cabazitaxel",
+            "psaResponseRate": "37",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TheraP_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TheraP_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Hofman, M.S. et al. (2024) “Overall survival with [177Lu]Lu-PSMA-617 versus cabazitaxel in metastatic castration-resistant prostate cancer (TheraP): secondary outcomes of a randomised, open-label, phase 2 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(23)00529-6\n\nHofman, M.S. et al. (2021) “[177Lu]Lu-PSMA-617 versus cabazitaxel in patients with metastatic castration-resistant prostate cancer (TheraP): a randomised, open-label, phase 2 trial,” The Lancet, available: https://doi.org/10.1016/s0140-6736(21)00237-3"
+  }
+]

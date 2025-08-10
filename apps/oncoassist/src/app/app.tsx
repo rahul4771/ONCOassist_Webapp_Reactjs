@@ -12,7 +12,7 @@ import { Dashboard, Formula, Signin, Favorites, PrognosticScore,
         DrugInfo, DrugInteractionChecker, AbcTool, OncoVideos, IoToxicityTool, 
         AboutUs,Profile,FeedBack,
         HcpValidation,
-        ProductServices
+        ProductServices,McrpcProstateCancer
       } from '../pages';
 import { i18n, LanguageSwitcher } from "@oncoassist/localization";
 import { I18nextProvider } from "react-i18next";
@@ -59,13 +59,13 @@ function AppContent() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/home" element={<Dashboard />} />
                 <Route path="/landing" element={<Dashboard />} />
-                <Route path="/formula/:toolName" element={<Formula />}  />
+                <Route path="/formula" element={<Formula />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/signin" element={<Signin />} />
                 <Route path="/signup" element={<Signin />} />
                 <Route path="/favorites" element={<Favorites />} />
-                <Route path="/prognostic_score/:toolName" element={<PrognosticScore />} />
-                <Route path="/adjuvant_tool/:toolName" element={<AdjuvantTool />} />
+                <Route path="/prognostic_score" element={<PrognosticScore />} />
+                <Route path="/adjuvant_tool" element={<AdjuvantTool />} />
                 <Route path="/ajcc_tnm_staging" element={<AjccTnmStaging />} />
                 <Route path="/toxicity_grading" element={<ToxicityGrading />} />
                 <Route path="/nccn_protocol" element={<NccnProtocol />} />
@@ -78,6 +78,7 @@ function AppContent() {
                 <Route path="/feedback" element={<FeedBack />} />
                 <Route path="/hcpvalidation" element={<HcpValidation />} />
                 <Route path="/productservices" element={<ProductServices />} />
+                <Route path="/mcrpc_prostate" element={<McrpcProstateCancer />} />
               </Routes>
             </div>
             {(!opuseremail || opuseremail === 'null') && <Footer />}

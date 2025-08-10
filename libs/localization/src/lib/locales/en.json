@@ -50,7 +50,6 @@
   "MELANOMA_TOOL": "Melanoma Tool",
   "CARBOPLATIN_DOSAGE_CG" : "Carboplatin Dose(Using Cockroft-Gault Equation for GFR)",
   "CARBOPLATIN_DOSAGE_WRI" : "Carboplatin Dose(Using Wright Equation for GFR)",
-  "FONG_SCORE" : "Fong Score",
   "CHILD_PUGH_SCORE" : "Child-Pugh Score",
   "CORRECTED_CALCIUM" : "Corrected Calcium",
   "CORRECTED_QT_INTERVALS" : "Corrected QT Interval (QTc)",
@@ -97,5 +96,19 @@
   "GET_VALIDATED" : "Get Validated",
   "ONCOPATIENT" : "ONCOpatient",
   "ASSURE_RCC" : "ASSURE RCC Prognostic Tool",
- "BED_CALCULATOR" : "BED and EQD2 dose calculator"
+ "BED_CALCULATOR" : "BED and EQD2 dose calculator",
+  "MCRPC_PROSTATE": "mCRPC Prostate Cancer",
+  "MCRPC_PROSTATE_DESC": "Systemic treatment options for metastatic castrate resistant prostate cancer (mCRPC) include AR pathway inhibitors (ARPi), cytotoxic chemotherapy, radioligand therapy, PARP inhibitors and others. This tool is designed to show efficacy outcomes with novel treatment options in recent clinical trials for mCRPC patients.",
+  "MCRPC_PROSTATE_INPUT_PRIOR_DOCETAXEL": "Prior Docetaxel treatment",
+  "MCRPC_PROSTATE_INPUT_PRIOR_ARPI":"Prior ARPi use",
+  "MCRPC_PROSTATE_INPUT_BRCA_MUTATION":"BRCA mutation",
+  "MCRPC_PROSTATE_INPUT_NON_BRCA_MUTATION":"Non-BRCA DDR mutation",
+  "MCRPC_PROSTATE_INPUT_PSMA":"PSMA positive tumor",
+  "MCRPC_PROSTATE_INPUT_MSI_MMR":"MSI high / MMR deficient",
+  "MCRPC_TMB_HIGH" : "TMB high",
+  "MCRPC_BONE_METASTATIC" : "Bone-only metastatic disease (+/- low volume nodal disease)",
+  "MCRPC_PROSTATE_TITLE" : "Metastatic Castrate Resistant Prostate Cancer Tool",
+  "REQUIRED" : "Required fields",
+  "MCRPC_PROSTATE_INFO" :"This tool is designed for comprehensive efficacy outcome analysis of current treatment options for mCRPC, including the latest data on novel approaches such as ARPi, PARPi, and ICIs applications. \n The development of this tool was supported by Novartis Oncology. However, only ONCOassist has control of the content and all other functionalities of this tool.",
+  "MCRPC_TOOL_HEADING" : "Metastatic Castrate Resistant Prostate Cancer Tool"
 }

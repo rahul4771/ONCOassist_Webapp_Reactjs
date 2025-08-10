@@ -12,7 +12,7 @@ export function DrugInfo() {
     return <Navigate to="/dashboard" replace />;
   }
 
- return <IframeLoader key={iframeSrc} iframeSrc={iframeSrc} />;
+  return <IframeLoader iframeSrc={iframeSrc} />;
 }
 
 export default DrugInfo;

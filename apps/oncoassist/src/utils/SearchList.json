@@ -283,19 +283,7 @@
       "deeplink": "oncoassist://prognostic/cpseg",
       "type": 0
     },
-    {
-      "section": "Prognostic Tool",
-      "synonyms": [
-        "RCC",
-        "Kidney Cancer",
-        "ASSURE","Renal cell carcinoma", "High-Risk RCC" ,"Locally Advanced RCC",
-        "RCC Recurrence Risk","Post-operative RCC",
-        "Fuhrman grade", "High-Risk Localized RCC", "Overall survival"
-      ],
-      "title": "ASSURE RCC Risk Prognostic Tool",
-      "deeplink": "oncoassist://prognostic/assure",
-      "type": 0        
-    },
+
     {
       "section": "Formulas",
       "synonyms": [
@@ -478,7 +466,7 @@
       "title": "Wells Score PE",
       "deeplink": "oncoassist://formulas/wsp",
       "type": 1
-    },   
+    },
     {
       "section": "Advanced Breast Cancer Tool",
       "synonyms": [],
@@ -499,6 +487,24 @@
       "title": "NCCN Treatment Protocols",
       "deeplink": "oncoassist://nccn",
       "type": 2
+    },
+    {
+    "title": "mCRPC Prostate Cancer Tool",
+    "type": 2,
+    "section": "Metastatic Castrate Resistant Prostate Cancer Tool",
+    "synonyms": [
+      "Prostate Tool",
+      "Castrate Resistant",
+      "mcrpc",
+      "Castration-Resistant",
+      "cytotoxic chemotherapy",
+      "Chemotherapy",
+      "Androgen Receptor",
+      "ADT",
+      "Bone-Directed Therapy",
+      "PARP Inhibitors mCRPC"
+    ],
+    "deeplink": "oncoassist://mcrpct"
     },
     {
       "section": "Adjuvant",

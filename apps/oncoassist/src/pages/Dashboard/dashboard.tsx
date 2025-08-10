@@ -18,15 +18,13 @@ import { UserState } from '../../store/userEmailSlice';
 import { RightMenuState, setRedirectIframeLink, setRedirectLink, setRedirectLoginClick, setSearchEditable } from "../../store/rightMenuReducer";
 import { useIntercom } from 'react-use-intercom';
 import { getApi } from '@oncoassist/shared/api';
-import { useNavigate,useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useCombinedAds } from '../../hooks/useCombinedAds';
 
 import BannerAd from '../../components/BannerAd/bannerAd';
 import ProgrammaticAd from '../../components/ProgrammaticAd/programmaticAd';
 import { logFirebaseEvent } from "../../utils/firebaseUtils";
 import store from '../../store/store';
-import { getUnifiedSearchParams } from '../../utils/urlUtils';
-
 
 export function Dashboard() {
   interface NewsItem {
@@ -40,23 +38,6 @@ export function Dashboard() {
     vote_count: number;
     votedornot: number;
   }
-
-
-  useEffect(() => {
-    const params = getUnifiedSearchParams();
-    const isOrganicValue = params.get('is_organic'); // Gets the value like "0" or "1"   
-    if (isOrganicValue === '0') {
-      const utmParams: Record<string, string> = {};
-      params.forEach((v, k) => {
-        utmParams[k] = v;
-      });
-      
-      if (Object.keys(utmParams).length > 0) {       
-        logFirebaseEvent('campaign_visit', utmParams);
-        localStorage.setItem('utmQueryParam', JSON.stringify(utmParams));
-      }
-    }
-  }, []);
 
   // Instead, use ref to track the state (like this):
   const isLeftMenuOpenRef = useRef(store.getState().leftMenu.isLeftMenuOpen);
@@ -77,7 +58,6 @@ export function Dashboard() {
   const userObjectId = useSelector(
     (state: { userEmail: UserState }) => state.userEmail.userID
   );
-  const userProfession = useSelector((state: { userEmail: UserState }) => state.userEmail.userProfession);
   const [loading, setLoading] = useState(false);
   const [loadingMore, setLoadingMore] = useState(true);
   const { data, error, isLoading, isFetching } = useGetNewsQuery({
@@ -154,9 +134,6 @@ export function Dashboard() {
       setLoadingMore(false);
     }
   }, [isFetching]);
-  
- 
-
 
   const [currentReview, setCurrentReview] = useState(0);
   const [fade, setFade] = useState(true);
@@ -197,15 +174,11 @@ export function Dashboard() {
     country_object_id: string;
     userJobdescription: string;
     userSpecialityIds : string[];
-    IsGetHcpValidationEnabled:boolean;
   }
 
   const { boot, update, shutdown } = useIntercom();
   const [userData, setUserData] = useState<UserDetails | null>(null);
   const [isSessionAuthenticated, setIsSessionAuthenticated] = useState(false);
-  
-
- 
 
   useEffect(() => {
     const getUserDetails = async () => {
@@ -213,10 +186,10 @@ export function Dashboard() {
         config.webappURL + config.userDetailsEndpoint
       );
 
+
       if (data && data.opuseremail && data.userID) {
         setUserData(data);
         setIsSessionAuthenticated(true);
-         localStorage.setItem('IsGetHcpValidationEnabled', String(data.IsGetHcpValidationEnabled));
       }
       else {
         setUserData(null);
@@ -278,8 +251,10 @@ export function Dashboard() {
     return () => shutdown();
   }, [boot, update, shutdown, isSessionAuthenticated, userData]);
 //#endregion
- 
+  
 
+
+  
 
   return (
     <div className={styles.mainContent}>
