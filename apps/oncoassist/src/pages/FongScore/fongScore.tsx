@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './fongScore.module.scss';
 import AppStoreButtons from '../../components/AppStoreButton/appStorebutton';
 import ToggleButton from '../../components/ToggleButton/toggleButton';
-import TrialPopup from '../../components/TrialPopup/trialPopup';
+import TrialPopup from '../../components/TrialPopupFs/trialPopupFs';
 import { useTranslation } from 'react-i18next';
 import { config, SOCIAL_MEDIA_LINKS } from '@oncoassist/shared/constants';
 import fongScoreInput from '../../utils/FongScoreInput.json';
@@ -12,13 +12,13 @@ import trialData from '../../utils/FongScore.json';
 export const FongScore = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [showPopup, setShowPopup] = useState(false);
-  const [trialResults, setTrialResults] = useState([]);
+  const [trialResults, setTrialResults] = useState({});
   const [formValues, setFormValues] = useState<Record<string, boolean | undefined>>(
     Object.fromEntries(fongScoreInput.map((item) => [item.analyticsKey, undefined]))
   );
 
   const { t } = useTranslation();
-  
+
 
   useEffect(() => {
     if (showPopup) {
@@ -26,12 +26,12 @@ export const FongScore = () => {
     } else {
       document.body.style.overflow = ''; // Restore scroll
     }
-  
+
     return () => {
       document.body.style.overflow = ''; // Cleanup on unmount
     };
   }, [showPopup]);
-  
+
 
   const handleChange = (key: string, value: boolean) => {
     setFormValues((prev) => ({
@@ -45,170 +45,170 @@ export const FongScore = () => {
   };
 
 
-function processDrugCombinations(
-  trialsList,
-  bRCASelection,
-  hRRSelection,
-  msiHighSelection,
-  tmbHighSelection
-) {
-  trialsList.forEach((mcrpcResultItem) => {
-    const combinationsList = mcrpcResultItem.drugCombinations;
-    const defaultCombination = combinationsList.some(
-      (item) => item.condition === 0
-    );
-    const conditionsList = combinationsList.map((item) => item.condition);
-    let drugCombinationToShow = null;
-
-    if (defaultCombination && combinationsList.length === 1) {
-      drugCombinationToShow = combinationsList.find(
+  function processDrugCombinations(
+    trialsList,
+    bRCASelection,
+    hRRSelection,
+    msiHighSelection,
+    tmbHighSelection
+  ) {
+    trialsList.forEach((mcrpcResultItem) => {
+      const combinationsList = mcrpcResultItem.drugCombinations;
+      const defaultCombination = combinationsList.some(
         (item) => item.condition === 0
       );
-    } else {
-      let satisfiedCondition = -1;
+      const conditionsList = combinationsList.map((item) => item.condition);
+      let drugCombinationToShow = null;
 
-      if (
-        conditionsList.includes(6) &&
-        msiHighSelection === true &&
-        tmbHighSelection === true
-      ) {
-        satisfiedCondition = 6;
-      } else if (
-        conditionsList.includes(7) &&
-        msiHighSelection === true &&
-        tmbHighSelection !== true
-      ) {
-        satisfiedCondition = 7;
-      } else if (
-        conditionsList.includes(8) &&
-        msiHighSelection !== true &&
-        tmbHighSelection === true
-      ) {
-        satisfiedCondition = 8;
-      } else if (
-        conditionsList.includes(5) &&
-        bRCASelection === undefined &&
-        hRRSelection === true
-      ) {
-        satisfiedCondition = 5;
-      } else if (
-        conditionsList.includes(4) &&
-        bRCASelection === true &&
-        hRRSelection === undefined
-      ) {
-        satisfiedCondition = 4;
-      } else if (
-        conditionsList.includes(3) &&
-        bRCASelection === true &&
-        hRRSelection === true
-      ) {
-        satisfiedCondition = 3;
-      } else if (
-        conditionsList.includes(2) &&
-        bRCASelection === false &&
-        hRRSelection === true
-      ) {
-        satisfiedCondition = 2;
-      } else if (
-        conditionsList.includes(1) &&
-        bRCASelection === true &&
-        hRRSelection === false
-      ) {
-        satisfiedCondition = 1;
-      } else if (conditionsList.includes(0)) {
-        satisfiedCondition = 0;
-      }
-
-      if (satisfiedCondition !== -1) {
+      if (defaultCombination && combinationsList.length === 1) {
         drugCombinationToShow = combinationsList.find(
-          (item) => item.condition === satisfiedCondition
+          (item) => item.condition === 0
         );
+      } else {
+        let satisfiedCondition = -1;
+
+        if (
+          conditionsList.includes(6) &&
+          msiHighSelection === true &&
+          tmbHighSelection === true
+        ) {
+          satisfiedCondition = 6;
+        } else if (
+          conditionsList.includes(7) &&
+          msiHighSelection === true &&
+          tmbHighSelection !== true
+        ) {
+          satisfiedCondition = 7;
+        } else if (
+          conditionsList.includes(8) &&
+          msiHighSelection !== true &&
+          tmbHighSelection === true
+        ) {
+          satisfiedCondition = 8;
+        } else if (
+          conditionsList.includes(5) &&
+          bRCASelection === undefined &&
+          hRRSelection === true
+        ) {
+          satisfiedCondition = 5;
+        } else if (
+          conditionsList.includes(4) &&
+          bRCASelection === true &&
+          hRRSelection === undefined
+        ) {
+          satisfiedCondition = 4;
+        } else if (
+          conditionsList.includes(3) &&
+          bRCASelection === true &&
+          hRRSelection === true
+        ) {
+          satisfiedCondition = 3;
+        } else if (
+          conditionsList.includes(2) &&
+          bRCASelection === false &&
+          hRRSelection === true
+        ) {
+          satisfiedCondition = 2;
+        } else if (
+          conditionsList.includes(1) &&
+          bRCASelection === true &&
+          hRRSelection === false
+        ) {
+          satisfiedCondition = 1;
+        } else if (conditionsList.includes(0)) {
+          satisfiedCondition = 0;
+        }
+
+        if (satisfiedCondition !== -1) {
+          drugCombinationToShow = combinationsList.find(
+            (item) => item.condition === satisfiedCondition
+          );
+        }
       }
-    }
 
-    if (drugCombinationToShow) {
-      mcrpcResultItem.drugCombinations = [drugCombinationToShow];
-    }
-  });
+      if (drugCombinationToShow) {
+        mcrpcResultItem.drugCombinations = [drugCombinationToShow];
+      }
+    });
 
-  return trialsList;
-}
+    return trialsList;
+  }
 
 
-function filterHazardRatios(inputsBasedFiltered, inputList) {
-  const updatedTrials = inputsBasedFiltered.map((trial) => {
-    const hazardRatioList = [];
+  function filterHazardRatios(inputsBasedFiltered, inputList) {
+    const updatedTrials = inputsBasedFiltered.map((trial) => {
+      const hazardRatioList = [];
 
-    if (Array.isArray(trial.hazardRatios) && trial.hazardRatios.length > 0) {
-      // ✅ Clone first
-      const allRatios = [trial.overallHR, ...trial.hazardRatios];
+      if (Array.isArray(trial.hazardRatios) && trial.hazardRatios.length > 0) {
+        // ✅ Clone first
+        const allRatios = [trial.overallHR, ...trial.hazardRatios];
 
-      allRatios.forEach((hazardRatioItem) => {
-        const displayConditions = hazardRatioItem.displayConditions;
+        allRatios.forEach((hazardRatioItem) => {
+          const displayConditions = hazardRatioItem.displayConditions;
 
-        if (Array.isArray(displayConditions) && displayConditions.length > 0) {
-          const itemFound = displayConditions.some((condition) =>
-            inputList.some(
-              (input) =>
-                Number(input.id) === condition.item &&
-                input.selected === condition.selection
-            )
-          );
-          if (itemFound) {
+          if (Array.isArray(displayConditions) && displayConditions.length > 0) {
+            const itemFound = displayConditions.some((condition) =>
+              inputList.some(
+                (input) =>
+                  Number(input.id) === condition.item &&
+                  input.selected === condition.selection
+              )
+            );
+            if (itemFound) {
+              hazardRatioList.push(hazardRatioItem);
+            }
+          } else {
             hazardRatioList.push(hazardRatioItem);
           }
-        } else {
-          hazardRatioList.push(hazardRatioItem);
-        }
-      });
-    }
+        });
+      }
 
-    return {
-      ...trial,
-      hazardRatios: hazardRatioList,
-    };
-  });
+      return {
+        ...trial,
+        hazardRatios: hazardRatioList,
+      };
+    });
 
-  return updatedTrials;
-}
+    return updatedTrials;
+  }
 
-function filterHazardRatios(inputsBasedFiltered, inputList) {
-  inputsBasedFiltered.forEach((trial) => {
-    const hazardRatioList = [];
+  function filterHazardRatios(inputsBasedFiltered, inputList) {
+    inputsBasedFiltered.forEach((trial) => {
+      const hazardRatioList = [];
 
-    if (Array.isArray(trial.hazardRatios) && trial.hazardRatios.length > 0) {
-      // Add overallHR at index 0
-      trial.hazardRatios.unshift(trial.overallHR);
+      if (Array.isArray(trial.hazardRatios) && trial.hazardRatios.length > 0) {
+        // Add overallHR at index 0
+        trial.hazardRatios.unshift(trial.overallHR);
 
-      trial.hazardRatios.forEach((hazardRatioItem) => {
-        const displayConditions = hazardRatioItem.displayConditions;
+        trial.hazardRatios.forEach((hazardRatioItem) => {
+          const displayConditions = hazardRatioItem.displayConditions;
 
-        if (Array.isArray(displayConditions) && displayConditions.length > 0) {
-          const itemFound = displayConditions.some((condition) =>
-            inputList.some(
-              (input) => Number(input.id) === condition.item && input.selected === condition.selection
-            )
-          );
-          if (itemFound) {
+          if (Array.isArray(displayConditions) && displayConditions.length > 0) {
+            const itemFound = displayConditions.some((condition) =>
+              inputList.some(
+                (input) => Number(input.id) === condition.item && input.selected === condition.selection
+              )
+            );
+            if (itemFound) {
+              hazardRatioList.push(hazardRatioItem);
+            }
+          } else {
             hazardRatioList.push(hazardRatioItem);
           }
-        } else {
-          hazardRatioList.push(hazardRatioItem);
-        }
-      });
-    }
+        });
+      }
 
-    // Add the filtered hazard ratio list to the trial object (or update as needed)
-    trial.hazardRatios = hazardRatioList;
-  });
+      // Add the filtered hazard ratio list to the trial object (or update as needed)
+      trial.hazardRatios = hazardRatioList;
+    });
 
-  return inputsBasedFiltered;
-}
+    return inputsBasedFiltered;
+  }
 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validateForm()) return;
+    // if (!validateForm()) return;
     const values = formValues;
 
     const PROpel_ID = 0;
@@ -465,7 +465,7 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
     );
     const finalTrials = filterHazardRatios(trialsAfterDrugFilter, inputList);
 
-    const resultDisplayList = [];
+    const resultDisplayList: ((prevState: never[]) => never[]) | { combinations: any; description: any; infoPSA: any; drugCombinations: any; hazardRatioTitle: any; hazardRatios: any; id: any; overallHR: any; references: any; title: any; subtitle: any; note: any; leftHazardTitle: string; rightHazardTitle: string; }[] = [];
 
     finalTrials.forEach((trial) => {
       const hazardRatioList = trial.hazardRatios ?? [];
@@ -473,27 +473,20 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
       const dataPSA0 = combination?.dataPSA?.[0];
       const dataPSA1 = combination?.dataPSA?.[1];
 
-      resultDisplayList.push({
-        combinations: trial.combinations,
-        description: trial.description,
-        infoPSA: trial.infoPSA,
-        drugCombinations: trial.drugCombinations,
-        hazardRatioTitle: trial.hazardRatioTitle,
-        hazardRatios: hazardRatioList,
-        id: trial.id,
-        overallHR: trial.overallHR,
-        references: trial.references,
-        title: trial.title,
-        subtitle: combination?.subTitle || '',
-        note: trial.note,
-        leftHazardTitle:
-          dataPSA0?.title?.length > 0 ? `Favours ${dataPSA0.title}` : '',
-        rightHazardTitle:
-          dataPSA1?.title?.length > 0 ? `Favours ${dataPSA1.title}` : '',
-      });
+
     });
 
-    setTrialResults(resultDisplayList);
+    // Count true values from formValues
+    const trueCount = Object.values(formValues).filter(value => value === true).length;
+
+    // Create a result object with the count
+    const result = {
+      score: trueCount, // Add the score based on true counts
+      riskLevel: trueCount <= 1 ? "Low" : trueCount <= 3 ? "Moderate" : "High",
+      survivalRate: trueCount <= 1 ? "57-67 %" : trueCount <= 3 ? "40-44 %" : "31-38 %"
+    };
+
+    setTrialResults(result); // Set the modified result
     setShowPopup(true);
   };
 
@@ -512,9 +505,12 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
 
   const handleClose = () => {
     setShowPopup(false);
-    setTrialResults([]);
+    setTrialResults({});
   };
 
+  const isFormValid = () => {
+    return !Object.values(formValues).some(value => value === undefined);
+  };
   return (
     <div className={styles.mainContent}>
       <div className={styles.contentSection}>
@@ -523,7 +519,7 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
         </div>
         <div className={styles.rowWrapper}>
           <div className={styles.toolSection}>
-           
+
             <div className={styles.formWrapper}>
               <div className={styles.formContainer}>
                 <p className={styles.descriptionText}>{t('FONG_SCORE_PROSTATE_DESC')}</p>
@@ -553,7 +549,7 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
                   ))}
 
                   <div className={styles.buttonWrapper}>
-                    <button type="submit" className={styles.submitButton}>
+                    <button type="submit" className={styles.submitButton} disabled={!isFormValid()}>
                       Calculate
                     </button>
                   </div>
@@ -561,77 +557,77 @@ function filterHazardRatios(inputsBasedFiltered, inputList) {
               </div>
             </div>
             <div className={styles.newsSection}>
-          <div className={styles.formWrapper}>
-            <div className={styles.formContainer}>
-              <h5>Info</h5>
-              <p className={styles.descriptionText}>
-                {t('FONG_SCORE_PROSTATE_INFO')}
-                <div className={styles.referenceWrapper}>
-                <span className={styles.referenceTitle}>References:</span>
-                  {trialData.map((item) => (
-                    <div className={styles.referenceSection}>
-                    <span className={styles.referenceToolTitle}>{item.title}</span>
-                    <span className={styles.referenceItem}>
-                    {item.references.split('\n').map((line, idx) => {
-                      const urlMatch = line.match(/https?:\/\/[^\s]+/);
-                      
-                      if (urlMatch) {
-                        const url = urlMatch[0];
-                        const [before, after] = line.split(url);
+              <div className={styles.formWrapper}>
+                <div className={styles.formContainer}>
+                  <h5>Info</h5>
+                  <p className={styles.descriptionText}>
+                    {t('FONG_SCORE_PROSTATE_INFO')}
+                    <div className={styles.referenceWrapper}>
+                      <span className={styles.referenceTitle}>References:</span>
+                      {trialData.map((item) => (
+                        <div className={styles.referenceSection}>
+                          <span className={styles.referenceToolTitle}>{item.title}</span>
+                          <span className={styles.referenceItem}>
+                            {item.references.split('\n').map((line, idx) => {
+                              const urlMatch = line.match(/https?:\/\/[^\s]+/);
 
-                        return (
-                          <React.Fragment key={idx}>
-                            {before}
-                            <a href={url} target="_blank" rel="noopener noreferrer">
-                              {url}
-                            </a>
-                            {after}
-                            <br />
-                          </React.Fragment>
-                        );
-                      }
+                              if (urlMatch) {
+                                const url = urlMatch[0];
+                                const [before, after] = line.split(url);
 
-                      return (
-                        <React.Fragment key={idx}>
-                          {line}
-                          <br />
-                        </React.Fragment>
-                      );
-                    })}
-                    </span>
+                                return (
+                                  <React.Fragment key={idx}>
+                                    {before}
+                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                      {url}
+                                    </a>
+                                    {after}
+                                    <br />
+                                  </React.Fragment>
+                                );
+                              }
+
+                              return (
+                                <React.Fragment key={idx}>
+                                  {line}
+                                  <br />
+                                </React.Fragment>
+                              );
+                            })}
+                          </span>
+                        </div>
+                      ))}
                     </div>
-                    ))}
-                </div>
-              </p>
-            </div>
-          </div>
-        </div>
-          </div>
-         
-          <div className={styles.reviewSection}>
-                <div className={styles.reviewCarousel}>
-                  <div className={styles.socialIcons}>
-                    {SOCIAL_MEDIA_LINKS.map(({ icon: Icon, url, name }, index) => (
-                      <a
-                        key={index}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={name}
-                      >
-                        <Icon className={styles.icon} />
-                      </a>
-                    ))}
-                  </div>
-                  <AppStoreButtons />
-                  <p className={styles.footer}>&copy; {new Date().getFullYear()} ONCOassist</p>
+                  </p>
                 </div>
               </div>
-         
-      </div>
-    
+            </div>
+          </div>
+
+          <div className={styles.reviewSection}>
+            <div className={styles.reviewCarousel}>
+              <div className={styles.socialIcons}>
+                {SOCIAL_MEDIA_LINKS.map(({ icon: Icon, url, name }, index) => (
+                  <a
+                    key={index}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={name}
+                  >
+                    <Icon className={styles.icon} />
+                  </a>
+                ))}
+              </div>
+              <AppStoreButtons />
+              <p className={styles.footer}>&copy; {new Date().getFullYear()} ONCOassist</p>
+            </div>
+          </div>
+
         </div>
-        {showPopup && (
+
+      </div>
+      {showPopup && (
         <div className={styles.popupSection}>
           <TrialPopup trials={trialResults} onClose={handleClose} />
         </div>
