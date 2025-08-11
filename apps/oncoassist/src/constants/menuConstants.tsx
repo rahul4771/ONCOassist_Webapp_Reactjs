@@ -20,6 +20,11 @@ export const useMenuItems = () => {
         iFrameLink: 'formula',
       },
       {
+        name: t('FONG_SCORE'),
+        link: 'public/index.php/formula/fong_score',
+        iFrameLink: 'formula',
+      },
+      {
         name: t('BODY_SURFACE_AREA'),
         link: 'public/index.php/formula/body_surface_area',
         iFrameLink: 'formula',
@@ -124,6 +129,8 @@ export const useMenuItems = () => {
         link: 'public/index.php/formula/wells_score_pe',
         iFrameLink: 'formula',
       },
+      
+
     ],
     prognosticScores : [
       {
