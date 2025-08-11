@@ -19,3 +19,4 @@ export { FeedBack } from './FeedBack/feedBack';
 export { HcpValidation } from './HcpValidation/hcpValidation';
 export { ProductServices } from './ProductServices/productServices';
 export { McrpcProstateCancer } from './McrpcProstateCancer/mcrpcProstateCancer';
+export { FongScore } from './FongScore/FongScore';

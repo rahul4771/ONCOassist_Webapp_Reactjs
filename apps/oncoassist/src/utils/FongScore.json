@@ -1,0 +1,55 @@
+[
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 27,
+    "title": "",
+    "combinations": [
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Lu-PSMA-617",
+            "psaResponseRate": "66",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Cabazitaxel",
+            "psaResponseRate": "37",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TheraP_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TheraP_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "Bolhuis, M.S. et al. (2024) “Overall survival with [177Lu]Lu-PSMA-617 versus cabazitaxel in metastatic castration-resistant prostate cancer (TheraP): secondary outcomes of a randomised, open-label, phase 2 trial,” The Lancet Oncology, available: https://doi.org/10.1016/s1470-2045(23)00529-6\n\nMargonics, M.S. et al. (2021) “[177Lu]Lu-PSMA-617 versus cabazitaxel in patients with metastatic castration-resistant prostate cancer (TheraP): a randomised, open-label, phase 2 trial,” The Lancet, available: https://doi.org/10.1016/s0140-6736(21)00237-3\n\nFong, M.S. et al. (2021) “[177Lu]Lu-PSMA-617 versus cabazitaxel in patients with metastatic castration-resistant prostate cancer (TheraP): a randomised, open-label, phase 2 trial,” The Lancet, available: https://doi.org/10.1016/s0140-6736(21)00237-3"
+  }
+]

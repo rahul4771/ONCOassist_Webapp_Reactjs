@@ -12,7 +12,7 @@ import { Dashboard, Formula, Signin, Favorites, PrognosticScore,
         DrugInfo, DrugInteractionChecker, AbcTool, OncoVideos, IoToxicityTool, 
         AboutUs,Profile,FeedBack,
         HcpValidation,
-        ProductServices,McrpcProstateCancer
+        ProductServices,McrpcProstateCancer, FongScore
       } from '../pages';
 import { i18n, LanguageSwitcher } from "@oncoassist/localization";
 import { I18nextProvider } from "react-i18next";
@@ -79,6 +79,7 @@ function AppContent() {
                 <Route path="/hcpvalidation" element={<HcpValidation />} />
                 <Route path="/productservices" element={<ProductServices />} />
                 <Route path="/mcrpc_prostate" element={<McrpcProstateCancer />} />
+                <Route path="/fongscore" element={<FongScore />} />
               </Routes>
             </div>
             {(!opuseremail || opuseremail === 'null') && <Footer />}

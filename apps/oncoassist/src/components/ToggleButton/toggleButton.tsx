@@ -11,6 +11,64 @@ interface ToggleButtonProps {
   className?:string;
 }
 
+// const ToggleButton: React.FC<ToggleButtonProps> = ({
+//   value,
+//   onChange,
+//   width = '120px',
+//   yesLabel,
+//   noLabel,
+//   id,
+//   name,
+//   className
+// }) => {
+//   return (
+//     <div
+//       id={id}
+//       className={`toggle-wrapper ${className ?? ''}`}
+//       style={{
+//         display: 'flex',
+//         borderRadius: '6px',
+//         overflow: 'hidden',
+//         backgroundColor: '#eee',
+//         border: '1px solid #ccc',
+//       }}
+//     >
+//       <button
+//         type="button"
+//         name={name}
+//         onClick={() => onChange(false)}
+//         className={styles.toggleButton}
+//         style={{
+//           flex: 1,
+//           padding: '6px 12px',
+//           backgroundColor: value === false ? '#fff' : '#eee',
+//           fontWeight: value === false ? '600' : '400',
+//           border: 'none',
+//           cursor: 'pointer',
+//         }}
+//       >
+//         {noLabel}
+//       </button>
+//       <div style={{ width: '1px', backgroundColor: '#ccc' }} />
+//       <button
+//         type="button"
+//         className={styles.toggleButton}
+//         name={name}
+//         onClick={() => onChange(true)}
+//         style={{
+//           flex: 1,
+//           padding: '6px 12px',
+//           backgroundColor: value === true ? '#fff' : '#eee',
+//           fontWeight: value === true ? '600' : '400',
+//           border: 'none',
+//           cursor: 'pointer',
+//         }}
+//       >
+//         {yesLabel}
+//       </button>
+//     </div>
+//   );
+// };
 const ToggleButton: React.FC<ToggleButtonProps> = ({
   value,
   onChange,
@@ -30,7 +88,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         borderRadius: '6px',
         overflow: 'hidden',
         backgroundColor: '#eee',
-        border: '1px solid #ccc',
+        border: '2px solid #55C1E8',
       }}
     >
       <button
@@ -41,7 +99,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         style={{
           flex: 1,
           padding: '6px 12px',
-          backgroundColor: value === false ? '#fff' : '#eee',
+          backgroundColor: value === false ? '#55C1E8' : '#eee',
           fontWeight: value === false ? '600' : '400',
           border: 'none',
           cursor: 'pointer',
@@ -58,7 +116,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         style={{
           flex: 1,
           padding: '6px 12px',
-          backgroundColor: value === true ? '#fff' : '#eee',
+          backgroundColor: value === true ? '#55C1E8' : '#eee',
           fontWeight: value === true ? '600' : '400',
           border: 'none',
           cursor: 'pointer',
@@ -71,3 +129,4 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
 };
 
 export default ToggleButton;
+// , FsToggleButton };

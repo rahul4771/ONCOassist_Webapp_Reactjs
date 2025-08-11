@@ -157,6 +157,11 @@ export const useMenuItems = () => {
         iFrameLink: 'prognostic_score',
       },
       {
+        name: t('FONG_SCORE'),
+        link: 'public/index.php/prognostic_scores/fongscore',
+        iFrameLink: 'fongscore',
+      },
+      {
         name: t('FLIPI'),
         link: 'public/index.php/prognostic_scores/flipi',
         iFrameLink: 'prognostic_score',

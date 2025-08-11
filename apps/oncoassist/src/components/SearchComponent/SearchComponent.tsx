@@ -159,6 +159,7 @@ const handleClick = (deepLink: string | null, type: number, title: string | null
   let navigateTo = "";
   let validLink = true;
   let inAppLink = false;
+  let inAppLinkfs = false;
 
   // Determine navigation based on deep link type
   switch (true) {
@@ -226,6 +227,11 @@ const handleClick = (deepLink: string | null, type: number, title: string | null
         navigateTo = 'mcrpc_prostate';
       break;
 
+    case deepLinkPart1?.includes("fongscore"):
+        inAppLinkfs = true;
+        navigateTo = 'fongscore';
+      break;
+
     default:
       validLink = false;
       console.warn(`Invalid or unsupported deep link section: ${deepLinkPart1}`);
@@ -246,6 +252,10 @@ const handleClick = (deepLink: string | null, type: number, title: string | null
   // Navigate to the determined path
   if(inAppLink === true){
     navigate('/mcrpc_prostate');  
+    return    
+  }
+  if(inAppLinkfs === true){
+    navigate('/fongscore');  
     return    
   }
   if (validLink && navigateTo) {
