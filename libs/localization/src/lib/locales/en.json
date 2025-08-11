@@ -109,6 +109,16 @@
   "MCRPC_BONE_METASTATIC" : "Bone-only metastatic disease (+/- low volume nodal disease)",
   "MCRPC_PROSTATE_TITLE" : "Metastatic Castrate Resistant Prostate Cancer Tool",
   "REQUIRED" : "Required fields",
-  "MCRPC_PROSTATE_INFO" :"This tool is designed for comprehensive efficacy outcome analysis of current treatment options for mCRPC, including the latest data on novel approaches such as ARPi, PARPi, and ICIs applications. \n The development of this tool was supported by Novartis Oncology. However, only ONCOassist has control of the content and all other functionalities of this tool.",
-  "MCRPC_TOOL_HEADING" : "Metastatic Castrate Resistant Prostate Cancer Tool"
+  "MCRPC_PROSTATE_INFO" :"sssThis tool is designed for comprehensive efficacy outcome analysis of current treatment options for mCRPC, including the latest data on novel approaches such as ARPi, PARPi, and ICIs applications. \n The development of this tool was supported by Novartis Oncology. However, only ONCOassist has control of the content and all other functionalities of this tool.",
+  "FONG_SCORE_PROSTATE_INFO" :"The Fong Clinical Risk.",
+  "MCRPC_TOOL_HEADING" : "Metastatic Castrate Resistant Prostate Cancer Tool",
+  "FONG_SCORE": "Fong Score",
+  "FONG_SCORE_PROSTATE": "mCRPC Prostate Cancer",
+  "FONG_SCORE_PROSTATE_DESC": "Prognostic score for predicting overall survival after resection of hepatic metastases in colorectal cancer.",
+  "FONG_SCORE_PROSTATE_INPUT_PRIOR_DOCETAXEL": "Node positive primary tumor",
+  "FONG_SCORE_PROSTATE_INPUT_PRIOR_ARPI":"Time from diagnosis of primary tumor to development of liver metastases < 12 months",
+  "FONG_SCORE_PROSTATE_INPUT_BRCA_MUTATION":"Number of liver metastases > 1",
+  "FONG_SCORE_PROSTATE_INPUT_NON_BRCA_MUTATION":"Pre-operative CEA level >200 ng/mL",
+  "FONG_SCORE_PROSTATE_INPUT_PSMA":"Size of the largest liver metastasis >5 cm",
+  "FONG_SCORE_TOOL_HEADING" : "Fong Score - Prognostic Score"
 }

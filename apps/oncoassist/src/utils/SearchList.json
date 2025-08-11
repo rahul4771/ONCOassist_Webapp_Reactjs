@@ -507,6 +507,23 @@
     "deeplink": "oncoassist://mcrpct"
     },
     {
+    "title": "Fong Score",
+    "type": 2,
+    "section": "Fong Score - Metastatic Colorectal Cancer",
+    "synonyms": [
+      "Prostate Tool",
+      "Castrate Resistant",
+      "fongscore",
+      "Castration-Resistant",
+      "cytotoxic chemotherapy",
+      "Chemotherapy",
+      "Androgen Receptor",
+      "ADT",
+      "Bone-Directed Therapy"
+    ],
+    "deeplink": "oncoassist://fongscore"
+    },
+    {
       "section": "Adjuvant",
       "synonyms": [
         "Predict"
