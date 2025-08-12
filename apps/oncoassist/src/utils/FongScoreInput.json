@@ -1,0 +1,38 @@
+[
+  {
+    "id":"0",
+    "title": "FONG_SCORE_PROSTATE_INPUT_PRIOR_DOCETAXEL",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "prior_docetaxel_treatment"    
+  },
+  {
+    "id": "1",
+    "title": "FONG_SCORE_PROSTATE_INPUT_PRIOR_ARPI",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "prior_ARPi_use"
+  },
+  {
+    "id": "2",
+    "title": "FONG_SCORE_PROSTATE_INPUT_BRCA_MUTATION",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "brca_mutation"
+  },
+  {
+    "id": "3",
+    "title": "FONG_SCORE_PROSTATE_INPUT_NON_BRCA_MUTATION",
+    "isMandatory": true,
+    "selectedIndex": -1,
+    "analyticsKey": "non_brca_ddr_mutation"
+  },
+  {
+    "id": "4",
+    "title": "FONG_SCORE_PROSTATE_INPUT_PSMA",
+    "isMandatory": false,
+    "selectedIndex": -1,
+    "analyticsKey": "psma_positive_tumor"
+  }
+]
+

@@ -167,6 +167,11 @@ export const useMenuItems = () => {
         iFrameLink: 'prognostic_score',
       },
       {
+        name: t('FONG_SCORE'),
+        link: 'public/index.php/prognostic_scores/fongscore',
+        iFrameLink: 'fongscore',
+      },
+      {
         name: t('GEREATRIC_ASSESSMENT'),
         link: 'public/index.php/prognostic_scores/g8_geriatric_assessment_tool',
         iFrameLink: 'prognostic_score',

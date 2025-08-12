@@ -1,0 +1,55 @@
+[
+  {
+    "overallHR": {
+      "lowerCI": 0,
+      "upperCI": 0,
+      "title": "Overall",
+      "hazardRatio": 0
+    },
+    "id": 27,
+    "title": "",
+    "combinations": [
+      3
+    ],
+    "description": "",
+    "infoPSA": "≥50% decline in PSA level from baseline",
+    "drugCombinations": [
+      {
+        "condition": 0,
+        "subTitle": "",
+        "dataPSA": [
+          {
+            "title": "Lu-PSMA-617",
+            "psaResponseRate": "66",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          },
+          {
+            "title": "Cabazitaxel",
+            "psaResponseRate": "37",
+            "timeToPSAProgression": "Not Reported",
+            "objectiveDiseaseProgression": ""
+          }
+        ],
+        "figures": [
+          {
+            "value": 0,
+            "caption": "RADIOGRAPHIC PROGRESSION FREE SURVIVAL (rPFS)",
+            "image": "TheraP_rpfs",
+            "description": ""
+          },
+          {
+            "value": 0,
+            "caption": "OVERALL SURVIVAL (OS)",
+            "image": "TheraP_os",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "hazardRatioTitle": "",
+    "hazardRatios": [],
+    "note": "",
+    "references": "[1] Bolhuis, K. et al. (2022) External Validation of Two Established Clinical Risk Scores Predicting Outcome after Local Treatment of olorectal Liver Metastases in a Nationwide Cohort, Cancers, 14(10), 2356, available: https://doi.org/10.3390/cancers14102356\n\n[2] Margonis, G.A., et l. (2018) Genetic And Morphological Evaluation (GAME) score for patients with colorectal liver metastases, British Journal of Surgery, 105(9), 1210 220, available: https://doi.org/10.1002/bjs.10838\n\n[3] Fong, Y. et al. (1999). Clinical Score for Predicting Recurrence After Hepatic Resection for Metastatic Colorectal Cancer. Annals of Surgery, 230(3), 309. https://doi.org/10.1097/00000658-199909000-00004"
+  }
+]

@@ -1,0 +1,821 @@
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+  overflow: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.mainContent::-webkit-scrollbar {
+  display: none;
+}
+
+// ✅ Responsive tweaks
+@media (max-width: 1024px) {
+  .mainContent {
+    padding: 16px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 12px;
+    // height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 10px;
+    // height: auto;
+    max-width: 100%;
+  }
+}
+
+
+.contentSection {
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.formHeadingWrapper {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 16px;
+    padding-top: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+.formHeadingWrapper
+ {
+  padding-left: 40px;
+  padding-right: 40px;
+  width:70%;
+  box-sizing: border-box;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .formWrapper {
+    width:100%;
+}
+.formHeadingWrapper{
+  width:100%;
+}
+}
+
+@media (max-width: 961px) {
+  .formWrapper {
+    width:100%;
+}
+.formHeadingWrapper{
+  width:100%;
+}
+}
+
+.formHeadingWrapper {
+  padding-top: 20px;
+
+  @media (max-width: 1024px) {
+    .formHeadingWrapper {
+      padding-top: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 10px;
+  }
+}
+
+.formHeading {
+  display: inline-block;
+  font-size: 30px;
+  color: #1c93d1;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .formHeading {
+      font-size: 29px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .formHeading {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+
+.rowWrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  @media (max-width: 961px) {
+    flex-direction: column;
+  }
+}
+
+
+
+.toolSection {
+  width: 65%;
+  @media (min-width: 961px) {
+    align-items: flex-start; 
+  }
+  @media (max-width: 961px) {
+    width: 100%;
+  }
+  @media (max-width: 1024px) and (min-width: 961px){
+    width: 65%;
+  }
+}
+
+
+.popupSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); // Optional: dimmed background
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+  }
+
+
+
+
+
+
+.formWrapper {
+  padding-top: 0;
+  padding-bottom: 40px;
+  max-width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  }
+
+
+
+.formContainer {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 10px 16px 10px;;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0px 8px 12px 8px;;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08); // subtle for mobile
+  }
+}
+
+.toggleGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 16px; // gap between label and toggle
+
+  @media (max-width: 1024px) {
+    gap: 12px;
+  }
+
+  @media (max-width: 768px) {
+    // flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+}
+
+
+.toggleLabel {
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.toggleWide {
+  max-width: 200px;
+  width: 100%;
+}
+
+.toggleNarrow {
+  max-width: 100px;
+  width: 100%;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    justify-content: stretch;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px ;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #3890d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.submitButton:disabled {
+  background-color: #E0E0E0;
+  cursor: not-allowed;
+}
+
+
+
+.referenceWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 5%;
+}
+
+.referenceSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.referenceToolTitle {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.referenceTitle{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.referenceItem {
+  font-size: 14px;
+  padding-bottom: 3%;
+  a {
+    color: #1c93d1;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leftMenu.closed + .mainContent {
+  margin-left: 70px; /* Adjusted margin when the menu is closed */
+}
+.searchSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 15px;
+  padding: 20px;
+  background: url('/ONCO_SEARCH_BANNER_background.jpg') no-repeat center/cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+}
+
+.searchText {
+  font-size: clamp(16px, 2vw, 22px); /* Adjusts based on screen size */
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal; /* Allows wrapping */
+  max-width: 1300px;
+  margin-bottom: 0;
+  font-size:26px;
+  cursor: default;
+}
+
+.searchInput {
+  flex-grow: 1;
+  max-width: 100%; /* Allows full width on small screens */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 50px;
+  max-width: 500px;
+}
+
+.loaderWithMargin {
+  margin-bottom: 75px; // Ensure it's above the footer
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1224px) {
+  .searchInput {
+    margin-left: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .searchBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .searchText {
+    font-size: 18px; /* Ensures readability */
+  }
+
+  .searchInput {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+ .reviewSection {
+  width: 35%;
+  position: sticky;
+  top: 45px; /* Adjust for spacing */
+  max-height: 60vh;
+  padding-left: 20px;
+
+  @media (max-width: 961px) {
+    display: none;
+  }
+}
+
+
+.newsCard, .reviewCard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsCard h2, .reviewCard h3 {
+  margin-top: 0;
+}
+
+.newsCard p, .reviewCard p {
+  margin: 10px 0;
+}
+
+.newsCard a {
+  color: #007bff;
+  text-decoration: none;
+ 
+  &:hover {
+  text-decoration: underline;
+  }
+}
+
+// .toolSection h1, .reviewSection h1 {
+//   color:#1c93d1;
+//   font-weight: 270;
+//   font-size: 26px;
+//   cursor: default;
+// }
+
+.webPageLink {
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+
+.socialIcons {
+  display: flex;
+  justify-content: center; // Centers icons horizontally
+  gap: 30px; // Adds equal spacing between icons
+  margin-top: 20px;
+
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: 1100px) {
+    gap: 25px;
+  }
+}
+
+.icon{
+  color: #1c93d1;
+  
+  &:hover {
+  transform: scale(1.2);
+  }
+}
+
+.socialIcon {
+  font-size: 34px; // Adjust icon size
+ 
+  background-color: #57b4e6;// Customize color if needed
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.footer{
+justify-content: center;
+display: flex;
+cursor: default;
+}
+.reviewContent{
+justify-content:center;
+
+align-items: center;
+// font-family:Avenir;
+font-family:  "Roboto", sans-serif;
+
+
+
+transition: transform 1s ease-in-out;
+padding-right: 5px;
+padding: 10px;
+overflow: hidden;
+position: relative; /* Ensure the child elements are positioned relative to this container */
+height: 100%; 
+}
+
+.reviewerName{
+color: #57b4e6;
+justify-content: center;
+display: flex;
+
+font-size: 14px;
+// font-family:Avenir;
+font-family:  "Roboto", sans-serif;
+}
+
+.carouselControls{
+color: #57b4e6;
+justify-content: center;
+display: flex;
+
+font-size: 14px;
+}
+
+.carouselButton{
+color: #57b4e6;
+margin: 10px;
+}
+
+.footer{
+font-size: 12px;
+}
+
+.carouselDots {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.dot {
+width: 10px;
+height: 10px;
+margin: 0 5px;
+background-color:#94d6f9; // Light grey for inactive dots
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 1.0s ease;
+}
+
+.activeDot {
+background-color:  #3b82f6; 
+
+}
+
+
+.reviewCarousel {
+overflow: hidden;
+width: 100%;
+max-height: auto;
+max-width: 100%;
+margin: 0 auto;
+position: relative;
+background: white;
+box-shadow: none;
+border-radius: 10px;
+border: 1px solid #ddd;
+justify-content: center;
+}
+
+.reviewTrack {
+display: flex;
+width: 100%;
+transition: transform 1s ease-in-out;
+
+background: white;
+word-wrap: break-word;
+overflow-wrap: break-word;
+margin: 10px;
+padding: 10px;
+}
+
+.reviewCard {
+min-width: 88%;
+max-width: 100%;
+background: white;
+box-shadow: none;
+text-align: center;
+margin: 15px;
+overflow: hidden; /* Prevent content from overflowing */
+word-wrap: break-word;
+transition: opacity 1s ease-in-out;
+height: 200px;
+}
+.reviewCard p{
+padding: 5px;
+
+min-width: 80%;
+}
+
+.reviewContent{
+padding:10px;
+}
+
+.fadeIn {
+opacity: 1;
+}
+
+.fadeOut {
+opacity: 0;
+}
+
+.loadMoreButton {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.loadMorediv {
+  width: 100%;
+  text-align: center;
+}
+
+.downArrowIcon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #1c93d1;
+}
+
+.loader {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  color: #1c93d1;
+  margin-bottom: 100px;
+}
+
+.customLoader {
+  width: 2rem;
+  height: 2rem;
+  border-width: 3px;
+  border-color: #1c93d1 !important; /* This will change the spinner color */
+  border-right-color: transparent !important; /* Creates a spinning effect */
+}
+
+
+.descriptionText {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formLabel {
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 16px;
+  color: #000;
+}
+
+.required {
+  color: red;
+}
+
+// @media (max-width: 700px) {
+//   .contentSection {
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//   }
+
+//   .searchBox {
+//     width: 100%;
+//     flex-direction: column;
+//     text-align: center;
+//     padding: 10px;
+//   }
+
+//   .searchInput {
+//     width: 100%;
+//     max-width: 100%;
+//   }
+
+//   .newsSection, .reviewSection {
+//     width: 100%;
+//   }
+
+//   .reviewSection {
+//     display: none; /* Hides sidebar on small screens */
+//   }
+// }
+// .toggleGroup {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-bottom: 16px; // spacing between groups
+// }
+
+// .toggleLabel {
+//   font-weight: 500;
+//   font-size: 16px;
+//   display: block;
+//   margin-bottom: 4px;
+// }
+
+.toggleButtonWrapper {
+  flex-shrink: 0;
+}
+
+// .buttonWrapper {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center; // Or 'flex-start' or 'flex-end' depending on layout
+// }
+
+// .submitButton {
+//   width: 100%; // Make it fill the wrapper
+//   max-width: 650px; // Optional: limit to a max width
+//   padding: 12px 16px;
+//   font-size: 16px;
+//   border-radius: 8px;
+//   background-color: #007bff;
+//   color: white;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .submitButton:disabled {
+//   background-color: #ccc;
+//   cursor: not-allowed;
+// }
+
+.errorText {
+  color: red;
+  font-size: 12px;
+}
+
+.requiredNote {
+  font-size: 12px;
+  color: #555;
+}
+
