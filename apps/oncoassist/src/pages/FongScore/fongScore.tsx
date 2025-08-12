@@ -529,9 +529,8 @@ export const FongScore = () => {
                     <div key={item.id} className={styles.toggleGroup}>
                       <label className={styles.toggleLabel} htmlFor={item.analyticsKey}>
                         {t(item.title)}
-                        {item.isMandatory && <span style={{ color: 'red' }}> *</span>}
                       </label>
-
+                      {/* <span>0</span> */}
                       <ToggleButton
                         id={item.id}
                         name={item.analyticsKey}
@@ -541,7 +540,7 @@ export const FongScore = () => {
                         yesLabel="Y"
                         className={styles.toggleNarrow}
                       />
-
+                      {/* <span>+1</span> */}
                       {errors[item.analyticsKey] && (
                         <div className={styles.errorText}>{errors[item.analyticsKey]}</div>
                       )}
@@ -561,7 +560,7 @@ export const FongScore = () => {
                 <div className={styles.formContainer}>
                   <h5>Info</h5>
                   <p className={styles.descriptionText}>
-                    {t('FONG_SCORE_PROSTATE_INFO')}
+                    {t('FONG_SCORE_PROSTATE_INFO_1')}<br/><br/>{t('FONG_SCORE_PROSTATE_INFO_2')}
                     <div className={styles.referenceWrapper}>
                       <span className={styles.referenceTitle}>References:</span>
                       {trialData.map((item) => (

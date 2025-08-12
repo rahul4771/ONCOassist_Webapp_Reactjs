@@ -79,7 +79,7 @@ function TrialPopup({ trials, onClose }: TrialPopupProps) {
               <div className={styles.formContainer}>
                 <h5>Info</h5>
                 <p className={styles.descriptionText}>
-                  {t('FONG_SCORE_PROSTATE_INFO')}
+                  {t('FONG_SCORE_PROSTATE_INFO_1')}<br/><br/>{t('FONG_SCORE_PROSTATE_INFO_2')}
                   <div className={styles.referenceWrapper}>
                     <span className={styles.referenceTitle}>References:</span>
                     {trialData.map((item) => (
